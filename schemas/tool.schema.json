@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schema.koality-assured.org/agent/tool.schema.json",
+  "title": "AgentToolDeclaration",
+  "description": "Schema for declaring agent tools, parameter specifications, and invocation constraints.",
+  "type": "object",
+  "required": [
+    "name",
+    "description",
+    "parameters"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "Snake_case identifier for the tool function."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Instruction to the agent detailing the purpose and behavior of the tool."
+    },
+    "parameters": {
+      "type": "object",
+      "required": [
+        "type",
+        "properties"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "object"
+          ]
+        },
+        "properties": {
+          "type": "object"
+        },
+        "required": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "is_daemon": {
+      "type": "boolean",
+      "description": "Whether the tool spawns a long-running background daemon process."
+    }
+  },
+  "additionalProperties": false
+}

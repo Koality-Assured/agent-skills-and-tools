@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-skills-and-tools"
+version = "0.1.0"
+description = "Public repository of reusable agent skills, schemas, and supporting tool integrations"
+readme = "README.md"
+authors = [{ name = "Koality-Assured", email = "engineering@koality-assured.org" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "jsonschema>=4.20.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.3.0",
+]
+
+[project.scripts]
+agent-skills = "tools.validator:main"
