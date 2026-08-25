@@ -9,6 +9,7 @@ Human index (not agent SoT):
 | Skill | Owner | Isolation |
 | --- | --- | --- |
 | [`agent-builder/`](./agent-builder/) | ai-tooling-ops | mutate |
+| [`ai-vendor-updates/`](./ai-vendor-updates/) | detailed-activity | mutate |
 | [`antagonistic-review/`](./antagonistic-review/) | detailed-activity | mutate |
 | [`anti-slop/`](./anti-slop/) | artifact-agent | mutate |
 | [`architecture-diagram/`](./architecture-diagram/) | artifact-agent | mutate |
