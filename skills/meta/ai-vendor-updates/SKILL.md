@@ -3,11 +3,12 @@ schema_version: "2.0.0"
 name: ai-vendor-updates
 description: >-
   Synthesizes recent releases, product capabilities, tooling updates, model weights,
-  and research announcements from major frontier AI vendors into concise flash briefings.
-  Use when checking updates, releases, changelogs, model announcements, or tooling
-  from Google Antigravity, Anthropic, OpenAI, Cursor, xAI, Meta AI, Mistral AI,
-  DeepSeek, or Microsoft. Do not use for antagonistic code review (antagonistic-review)
-  or general architectural research writeups (deep-research).
+  benchmark shifts, and research announcements from major frontier AI vendors and BenchLM
+  into concise flash briefings. Use when checking updates, releases, changelogs, model
+  announcements, benchmark radar, or tooling from Google Antigravity, Anthropic, OpenAI,
+  Cursor, xAI, Meta AI, Mistral AI, DeepSeek, Microsoft, or BenchLM. Do not use for
+  antagonistic code review (antagonistic-review) or general architectural research
+  writeups (deep-research).
 owner_agent: detailed-activity
 rank: high
 isolation: mutate
@@ -44,7 +45,7 @@ contracts:
 
 ## When to use
 
-Checking recent updates, releases, changelogs, tooling improvements, API modifications, or research announcements from major frontier AI vendors (Google/Antigravity, Anthropic, OpenAI, Cursor, xAI, Meta AI, Mistral AI, DeepSeek, Microsoft/GitHub). Use when the user requests an AI vendor update, flash briefing, release digest, or frontier capability scan.
+Checking recent updates, releases, changelogs, tooling improvements, API modifications, benchmark movements, or research announcements from major frontier AI vendors and benchmark platforms (Google/Antigravity, Anthropic, OpenAI, Cursor, xAI, Meta AI, Mistral AI, DeepSeek, Microsoft/GitHub, BenchLM). Use when the user requests an AI vendor update, flash briefing, release digest, or frontier capability scan.
 
 ## When not to use
 

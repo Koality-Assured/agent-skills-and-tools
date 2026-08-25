@@ -392,6 +392,36 @@
           "focus": "Phi-series SLMs, 1-bit LLMs (BitNet), strategic enterprise initiatives"
         }
       ]
+    },
+    "benchlm": {
+      "name": "BenchLM Research & Radar",
+      "ecosystem": ["BenchLM", "LLM Leaderboards", "Token Price Index", "Model Benchmarks"],
+      "primary_channels": [
+        {
+          "name": "BenchLM Research Blog",
+          "url": "https://benchlm.ai/blog",
+          "feed_url": "https://benchlm.ai/rss.xml",
+          "type": "rss",
+          "signal_tier": "P0",
+          "focus": "Empirical benchmark breakthroughs, frontier model comparisons, and evaluation methodology"
+        },
+        {
+          "name": "BenchLM Morning Radar Alerts",
+          "url": "https://benchlm.ai/radar",
+          "feed_url": "https://benchlm.ai/updates.xml",
+          "type": "rss",
+          "signal_tier": "P0",
+          "focus": "Confirmed source-linked AI changes, API adjustments, and release deprecations"
+        },
+        {
+          "name": "BenchLM Atom Feed",
+          "url": "https://benchlm.ai/",
+          "feed_url": "https://benchlm.ai/atom.xml",
+          "type": "atom",
+          "signal_tier": "P1",
+          "focus": "Live benchmark score updates, speed shifts, and pricing index movements"
+        }
+      ]
     }
   }
 }
