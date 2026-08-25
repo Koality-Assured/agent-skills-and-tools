@@ -1,0 +1,427 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-08-25",
+  "description": "Primary intelligence sources, feeds, and documentation endpoints for major AI vendor ecosystems.",
+  "vendors": {
+    "google": {
+      "name": "Google",
+      "ecosystem": ["Antigravity", "Gemini", "DeepMind", "Gemma", "Vertex AI"],
+      "primary_channels": [
+        {
+          "name": "Google Antigravity Portal & In-Tool",
+          "url": "https://antigravity.google",
+          "feed_url": null,
+          "type": "portal",
+          "signal_tier": "P0",
+          "focus": "Agent execution runtime, CLI, sidecar tooling, subagent orchestration"
+        },
+        {
+          "name": "Gemini API Release Notes",
+          "url": "https://ai.google.dev/gemini-api/docs/release-notes",
+          "feed_url": null,
+          "type": "changelog",
+          "signal_tier": "P0",
+          "focus": "Model deprecations, context caching, structured outputs, pricing, rate limits"
+        },
+        {
+          "name": "Google Cloud Vertex AI Release Notes",
+          "url": "https://cloud.google.com/vertex-ai/docs/release-notes",
+          "feed_url": "https://cloud.google.com/feeds/vertex-ai-release-notes.xml",
+          "type": "rss",
+          "signal_tier": "P0",
+          "focus": "Enterprise ML infrastructure, GA rollouts, PTU quotas, model garden"
+        },
+        {
+          "name": "Gemma GitHub Releases",
+          "url": "https://github.com/google-deepmind/gemma",
+          "feed_url": "https://github.com/google-deepmind/gemma/releases.atom",
+          "type": "atom",
+          "signal_tier": "P1",
+          "focus": "Open weights, quantization formats, mobile runtimes (MediaPipe/LiteRT)"
+        },
+        {
+          "name": "Google DeepMind Discover Blog",
+          "url": "https://deepmind.google/discover/blog/",
+          "feed_url": "https://research.google/blog/feed/",
+          "type": "rss",
+          "signal_tier": "P2",
+          "focus": "Frontier architectures, test-time compute, reasoning token paradigms, scientific AI"
+        },
+        {
+          "name": "Google Developers Blog",
+          "url": "https://developers.googleblog.com/",
+          "feed_url": "https://feeds.feedburner.com/GDBcode",
+          "type": "rss",
+          "signal_tier": "P2",
+          "focus": "Developer ecosystem tutorials and platform announcements"
+        }
+      ]
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "ecosystem": ["Claude", "Claude Code", "Claude API", "Anthropic Research"],
+      "primary_channels": [
+        {
+          "name": "Claude Code CLI 'What is New'",
+          "url": "https://code.claude.com/docs/en/what-is-new",
+          "feed_url": "https://github.com/anthropics/claude-code/releases.atom",
+          "type": "atom",
+          "signal_tier": "P0",
+          "focus": "Agentic CLI capabilities, permission model updates, tool definitions, MCP"
+        },
+        {
+          "name": "Claude API System Prompts Changelog",
+          "url": "https://docs.anthropic.com/en/release-notes/system-prompts",
+          "feed_url": null,
+          "type": "changelog",
+          "signal_tier": "P0",
+          "focus": "System prompt revisions, prompt caching, batch API, extended thinking controls"
+        },
+        {
+          "name": "Claude Help Center Release Notes",
+          "url": "https://support.anthropic.com/en/articles/8324991-claude-release-notes",
+          "feed_url": null,
+          "type": "changelog",
+          "signal_tier": "P1",
+          "focus": "Claude.ai UI features, Artifacts, Projects, Enterprise connectors"
+        },
+        {
+          "name": "Anthropic Status Page",
+          "url": "https://status.anthropic.com/",
+          "feed_url": "https://status.anthropic.com/history.rss",
+          "type": "rss",
+          "signal_tier": "P0",
+          "focus": "Incident reports, API degradations, maintenance schedules"
+        },
+        {
+          "name": "Anthropic Python SDK Releases",
+          "url": "https://github.com/anthropics/anthropic-sdk-python",
+          "feed_url": "https://github.com/anthropics/anthropic-sdk-python/releases.atom",
+          "type": "atom",
+          "signal_tier": "P1",
+          "focus": "SDK parameter mappings, typed client updates, streaming protocols"
+        },
+        {
+          "name": "Anthropic News & Research",
+          "url": "https://www.anthropic.com/news",
+          "feed_url": null,
+          "type": "blog",
+          "signal_tier": "P1",
+          "focus": "Frontier model releases (Opus/Sonnet/Haiku), alignment, interpretability"
+        }
+      ]
+    },
+    "openai": {
+      "name": "OpenAI",
+      "ecosystem": ["ChatGPT", "OpenAI Platform", "OpenAPI", "Cookbook"],
+      "primary_channels": [
+        {
+          "name": "OpenAI News & Announcements",
+          "url": "https://openai.com/news/",
+          "feed_url": "https://openai.com/news/rss.xml",
+          "type": "rss",
+          "signal_tier": "P0",
+          "focus": "Major model launches (o-series, GPT-4o, GPT-5), company milestones"
+        },
+        {
+          "name": "Platform API Changelog",
+          "url": "https://platform.openai.com/docs/changelog",
+          "feed_url": null,
+          "type": "changelog",
+          "signal_tier": "P0",
+          "focus": "Structured Outputs, Realtime API, Batch API, model aliases, pricing drops"
+        },
+        {
+          "name": "OpenAPI Spec Master Commits",
+          "url": "https://github.com/openai/openai-openapi",
+          "feed_url": "https://github.com/openai/openai-openapi/commits/master.atom",
+          "type": "atom",
+          "signal_tier": "P0",
+          "focus": "Early schema parameter changes, headers, and model identifiers"
+        },
+        {
+          "name": "ChatGPT Release Notes",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "feed_url": null,
+          "type": "changelog",
+          "signal_tier": "P1",
+          "focus": "Consumer ChatGPT features, Voice Mode, Canvas, desktop apps"
+        },
+        {
+          "name": "OpenAI Developer Community Announcements",
+          "url": "https://community.openai.com/",
+          "feed_url": "https://community.openai.com/c/announcements.rss",
+          "type": "rss",
+          "signal_tier": "P1",
+          "focus": "Official dev team updates, developer challenges, community betas"
+        },
+        {
+          "name": "OpenAI Python SDK Releases",
+          "url": "https://github.com/openai/openai-python",
+          "feed_url": "https://github.com/openai/openai-python/releases.atom",
+          "type": "atom",
+          "signal_tier": "P1",
+          "focus": "Python client library releases and feature additions"
+        }
+      ]
+    },
+    "cursor": {
+      "name": "Cursor (Anysphere)",
+      "ecosystem": ["Cursor IDE", "Composer", "MCP", "Rules"],
+      "primary_channels": [
+        {
+          "name": "Cursor IDE Changelog",
+          "url": "https://cursor.com/changelog",
+          "feed_url": null,
+          "type": "changelog",
+          "signal_tier": "P0",
+          "focus": "IDE version releases, Composer features, agent modes, inline diffs"
+        },
+        {
+          "name": "Cursor Forum Announcements",
+          "url": "https://forum.cursor.com/c/announcements",
+          "feed_url": "https://forum.cursor.com/c/announcements.rss",
+          "type": "rss",
+          "signal_tier": "P0",
+          "focus": "Official release threads, prompt caching integration, early access builds"
+        },
+        {
+          "name": "Cursor Documentation Hub",
+          "url": "https://docs.cursor.com/",
+          "feed_url": null,
+          "type": "docs",
+          "signal_tier": "P1",
+          "focus": "MCP server setup, rules (.cursor/rules), indexing and context configuration"
+        },
+        {
+          "name": "Cursor Engineering Blog",
+          "url": "https://cursor.com/blog",
+          "feed_url": null,
+          "type": "blog",
+          "signal_tier": "P2",
+          "focus": "Speculative decoding, custom repo indexing architecture, agent execution"
+        }
+      ]
+    },
+    "xai": {
+      "name": "xAI",
+      "ecosystem": ["Grok", "Grok API", "Grok Build"],
+      "primary_channels": [
+        {
+          "name": "xAI Official Blog & Launches",
+          "url": "https://x.ai/blog",
+          "feed_url": null,
+          "type": "blog",
+          "signal_tier": "P0",
+          "focus": "Frontier model releases (Grok 3/4), multimodal vision, reasoning compute"
+        },
+        {
+          "name": "xAI Developer Documentation & Model Table",
+          "url": "https://docs.x.ai/docs/overview",
+          "feed_url": null,
+          "type": "changelog",
+          "signal_tier": "P0",
+          "focus": "API endpoints, context window upgrades, function calling, rate limits"
+        },
+        {
+          "name": "Grok Build CLI Releases",
+          "url": "https://github.com/xai-org/grok-build",
+          "feed_url": "https://github.com/xai-org/grok-build/releases.atom",
+          "type": "atom",
+          "signal_tier": "P1",
+          "focus": "Terminal agent tools, CLI integrations, SDK updates"
+        },
+        {
+          "name": "xAI Hugging Face Hub",
+          "url": "https://huggingface.co/xai-org",
+          "feed_url": null,
+          "type": "hub",
+          "signal_tier": "P1",
+          "focus": "Open weights releases and model cards"
+        }
+      ]
+    },
+    "meta": {
+      "name": "Meta AI",
+      "ecosystem": ["Llama", "Llama Stack", "PyTorch", "FAISS"],
+      "primary_channels": [
+        {
+          "name": "Meta AI Blog & Research",
+          "url": "https://ai.meta.com/blog/",
+          "feed_url": "https://about.fb.com/news/feed/",
+          "type": "rss",
+          "signal_tier": "P0",
+          "focus": "Llama model drops, multimodal weights, research milestones (SAM, Movie Gen)"
+        },
+        {
+          "name": "Meta Llama Models Releases",
+          "url": "https://github.com/meta-llama/llama-models",
+          "feed_url": "https://github.com/meta-llama/llama-models/releases.atom",
+          "type": "atom",
+          "signal_tier": "P0",
+          "focus": "Parameter variants (8B/70B/405B), distillations, license changes"
+        },
+        {
+          "name": "Llama Stack Releases",
+          "url": "https://github.com/meta-llama/llama-stack",
+          "feed_url": "https://github.com/meta-llama/llama-stack/releases.atom",
+          "type": "atom",
+          "signal_tier": "P1",
+          "focus": "Agentic standardization specs, provider adapters, client SDKs"
+        },
+        {
+          "name": "PyTorch Official Blog & Releases",
+          "url": "https://pytorch.org/blog/",
+          "feed_url": "https://pytorch.org/feed.xml",
+          "type": "rss",
+          "signal_tier": "P1",
+          "focus": "Framework releases, torch.compile enhancements, quantized FP8/FP4 kernels"
+        }
+      ]
+    },
+    "mistral": {
+      "name": "Mistral AI",
+      "ecosystem": ["Mistral Models", "Le Chat", "Mistral Platform API", "Codestral"],
+      "primary_channels": [
+        {
+          "name": "Mistral News & Launches",
+          "url": "https://mistral.ai/news/",
+          "feed_url": null,
+          "type": "blog",
+          "signal_tier": "P0",
+          "focus": "Foundation models (Small/Large/Pixtral/Codestral/Devstral), open weight drops"
+        },
+        {
+          "name": "Mistral API Documentation Changelogs",
+          "url": "https://docs.mistral.ai/resources/changelogs/",
+          "feed_url": null,
+          "type": "changelog",
+          "signal_tier": "P0",
+          "focus": "Agentic search, Document OCR, Fine-tuning API, context adjustments"
+        },
+        {
+          "name": "Mistral Python Client Releases",
+          "url": "https://github.com/mistralai/client-python",
+          "feed_url": "https://github.com/mistralai/client-python/releases.atom",
+          "type": "atom",
+          "signal_tier": "P1",
+          "focus": "Official Python SDK methods, typing updates, structured outputs"
+        }
+      ]
+    },
+    "deepseek": {
+      "name": "DeepSeek",
+      "ecosystem": ["DeepSeek-V3", "DeepSeek-R1", "FlashMLA", "DualPipe", "API"],
+      "primary_channels": [
+        {
+          "name": "DeepSeek API Documentation News",
+          "url": "https://api-docs.deepseek.com/news/news",
+          "feed_url": null,
+          "type": "changelog",
+          "signal_tier": "P0",
+          "focus": "API pricing, peak/off-peak rates, model deprecation dates, model IDs"
+        },
+        {
+          "name": "DeepSeek-V3 Repository Releases",
+          "url": "https://github.com/deepseek-ai/DeepSeek-V3",
+          "feed_url": "https://github.com/deepseek-ai/DeepSeek-V3/releases.atom",
+          "type": "atom",
+          "signal_tier": "P0",
+          "focus": "Open weights releases, architectural specs, Multi-token Prediction (MTP)"
+        },
+        {
+          "name": "FlashMLA & High-Performance Kernels",
+          "url": "https://github.com/deepseek-ai/FlashMLA",
+          "feed_url": "https://github.com/deepseek-ai/FlashMLA/releases.atom",
+          "type": "atom",
+          "signal_tier": "P1",
+          "focus": "CUDA/Triton kernels for Hopper/Blackwell, MLA optimizations, FP8 inference"
+        },
+        {
+          "name": "DeepSeek Hugging Face Hub",
+          "url": "https://huggingface.co/deepseek-ai",
+          "feed_url": null,
+          "type": "hub",
+          "signal_tier": "P0",
+          "focus": "Model checkpoints, tokenizer files, distilled reasoning variants"
+        }
+      ]
+    },
+    "microsoft": {
+      "name": "Microsoft & GitHub",
+      "ecosystem": ["Copilot", "Azure AI Foundry", "Semantic Kernel", "MS Research"],
+      "primary_channels": [
+        {
+          "name": "GitHub Copilot Changelog",
+          "url": "https://github.blog/changelog/label/copilot/",
+          "feed_url": "https://github.blog/changelog/feed/",
+          "type": "rss",
+          "signal_tier": "P0",
+          "focus": "Copilot IDE updates, Multi-model selector, Workspace/Agent mode, CLI"
+        },
+        {
+          "name": "Azure AI Foundry & OpenAI What's New",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-studio/what-is-new",
+          "feed_url": "https://azurecomcdn.azureedge.net/en-us/updates/feed/",
+          "type": "rss",
+          "signal_tier": "P0",
+          "focus": "Model-as-a-Service (MaaS) catalog, Serverless endpoints, PTU changes"
+        },
+        {
+          "name": "Semantic Kernel DevBlog",
+          "url": "https://devblogs.microsoft.com/semantic-kernel/",
+          "feed_url": "https://devblogs.microsoft.com/semantic-kernel/feed/",
+          "type": "rss",
+          "signal_tier": "P0",
+          "focus": "Agentic orchestration SDKs (C#, Python, Java), Azure Agent Service"
+        },
+        {
+          "name": "Semantic Kernel GitHub Releases",
+          "url": "https://github.com/microsoft/semantic-kernel",
+          "feed_url": "https://github.com/microsoft/semantic-kernel/releases.atom",
+          "type": "atom",
+          "signal_tier": "P1",
+          "focus": "SDK version releases, connector plugins, breaking API shifts"
+        },
+        {
+          "name": "Microsoft AI Official & Research Blogs",
+          "url": "https://blogs.microsoft.com/ai/",
+          "feed_url": "https://blogs.microsoft.com/feed/",
+          "type": "rss",
+          "signal_tier": "P2",
+          "focus": "Phi-series SLMs, 1-bit LLMs (BitNet), strategic enterprise initiatives"
+        }
+      ]
+    },
+    "benchlm": {
+      "name": "BenchLM Research & Radar",
+      "ecosystem": ["BenchLM", "LLM Leaderboards", "Token Price Index", "Model Benchmarks"],
+      "primary_channels": [
+        {
+          "name": "BenchLM Research Blog",
+          "url": "https://benchlm.ai/blog",
+          "feed_url": "https://benchlm.ai/rss.xml",
+          "type": "rss",
+          "signal_tier": "P0",
+          "focus": "Empirical benchmark breakthroughs, frontier model comparisons, and evaluation methodology"
+        },
+        {
+          "name": "BenchLM Morning Radar Alerts",
+          "url": "https://benchlm.ai/radar",
+          "feed_url": "https://benchlm.ai/updates.xml",
+          "type": "rss",
+          "signal_tier": "P0",
+          "focus": "Confirmed source-linked AI changes, API adjustments, and release deprecations"
+        },
+        {
+          "name": "BenchLM Atom Feed",
+          "url": "https://benchlm.ai/",
+          "feed_url": "https://benchlm.ai/atom.xml",
+          "type": "atom",
+          "signal_tier": "P1",
+          "focus": "Live benchmark score updates, speed shifts, and pricing index movements"
+        }
+      ]
+    }
+  }
+}
