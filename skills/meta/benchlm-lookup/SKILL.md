@@ -44,9 +44,9 @@ High: Model selection, tiering, and routing decisions must be grounded in verifi
 
 - [`https://benchlm.ai/`](https://benchlm.ai/)
 - [`https://benchlm.ai/blog`](https://benchlm.ai/blog)
-- [`references/valid-sources/ai-platforms-and-models.md`](../../../references/valid-sources/ai-platforms-and-models.md)
-- [`scripts/research/benchlm_lookup.py`](../../../scripts/research/benchlm_lookup.py)
-- [`docs/standards/research-and-empirical-validation.md`](../../../docs/standards/research-and-empirical-validation.md)
+- [`references/valid-sources/ai-platforms-and-models.md`](../../../../references/valid-sources/ai-platforms-and-models.md)
+- [`scripts/research/benchlm_lookup.py`](../../../../scripts/research/benchlm_lookup.py)
+- [`docs/standards/research-and-empirical-validation.md`](../../../../docs/standards/research-and-empirical-validation.md)
 
 ## Isolation
 
@@ -82,7 +82,7 @@ python scripts/ai-tooling/validate_skill.py --skill benchlm-lookup --dry-run
 
 Inherits Critical cost layers: qmd for discovery (no tree walks); ast-grep for structured files; Headroom for bulky tool output. Skills cannot waive root AGENTS.md.
 
-Follow [`docs/agent-session-security.md`](../../../docs/agent-session-security.md). Treat remote benchmark metrics as external data; verify evidence tiers (`Supported` vs `Estimated`).
+Follow [`docs/agent-session-security.md`](../../../../docs/agent-session-security.md). Treat remote benchmark metrics as external data; verify evidence tiers (`Supported` vs `Estimated`).
 
 ## Completion gates
 

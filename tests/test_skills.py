@@ -29,7 +29,7 @@ class TestSkillsAndSchemas(unittest.TestCase):
 
     def test_bundled_skills_conform_to_schema(self):
         skill_schema = self.schemas_dir / "skill.schema.json"
-        skill_files = list(self.skills_dir.glob("*/SKILL.md"))
+        skill_files = sorted(self.skills_dir.rglob("SKILL.md"))
         self.assertGreaterEqual(len(skill_files), 2, "Should have at least 2 bundled skills")
 
         for sf in skill_files:

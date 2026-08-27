@@ -98,7 +98,7 @@ def validate_all_skills(base_dir: Path) -> Tuple[int, int]:
         print(f"Error: skills directory not found at {skills_dir}", file=sys.stderr)
         return 0, 1
 
-    skill_files = list(skills_dir.glob("*/SKILL.md"))
+    skill_files = sorted(skills_dir.rglob("SKILL.md"))
     if not skill_files:
         print(f"No skills found in {skills_dir}")
         return 0, 0

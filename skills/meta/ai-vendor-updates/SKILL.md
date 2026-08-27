@@ -46,7 +46,7 @@ High: Vendor intelligence guides tooling decisions, model routing, token cost op
 - [`references/vendor-sources.json`](./references/vendor-sources.json)
 - [`scripts/research/ai_vendor_briefing.py`](../../../../scripts/research/ai_vendor_briefing.py)
 - [`docs/agent-session-security.md`](../../../../docs/agent-session-security.md)
-- [`ai-tooling/skills/skill-conventions.md`](..\..\skill-conventions.md)
+- [`ai-tooling/skills/skill-conventions.md`](../../skill-conventions.md)
 
 ## Isolation
 

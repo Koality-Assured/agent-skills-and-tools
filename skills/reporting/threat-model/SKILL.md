@@ -38,7 +38,7 @@ High: each threat is a short scenario plus **named** framework IDs from `qmd get
 - `python scripts/results/new_run_dir.py --family threat-model --topic <slug>`
 - `python scripts/results/build_threat_model.py --sections <dir> --out <run-dir> [--topic <slug>]`
 - Stakeholder HTML: [`foundation-site`](../foundation-site/SKILL.md) (designed page — not `<pre>`)
-- Human-facing links to other repo files: [`github-paths`](..\..\git\github-paths\SKILL.md)
+- Human-facing links to other repo files: [`github-paths`](../../git/github-paths/SKILL.md)
 - Diagrams: parent spawns `artifact-agent` (`mermaid-diagram` / `architecture-diagram`)
 
 ## Isolation
@@ -52,7 +52,7 @@ High: each threat is a short scenario plus **named** framework IDs from `qmd get
 3. For **each STRIDE threat**, write a short scenario that includes all of: **asset**, **attacker**, **path**, **impact**, **existing repo control**, **gap**. Cite **named** framework entries (**title + ID**, e.g. “SQL Injection — CWE-89”, not bare `CWE-89` in an ID salad table). Pull names from the `qmd get` pages you opened.
 4. Ask parent to spawn `artifact-agent` for DFD and STRIDE diagrams (do not reimplement mermaid); embed diagrams directly as visual blocks/Mermaid in report markdown and HTML (no unrendered `.mmd` raw lists).
 5. `python scripts/results/new_run_dir.py --family threat-model --topic <slug>` then `python scripts/results/build_threat_model.py --sections <dir> --out results/threat-model/<topic>/<YYYY-MM-DD>/ [--topic <slug>]`.
-6. Stakeholder HTML **MUST** be structured (Foundation via [`foundation-site`](../foundation-site/SKILL.md) / improved assembler) — **not** a whole-report `<pre>` or Markdown paste. Tables and callouts as real HTML. Links to other repo files in that HTML/MD **MUST** be GitHub `blob/main` / `tree/main` URLs ([`github-paths`](..\..\git\github-paths\SKILL.md)), not `../` relatives or local OS paths. Top bar collapses frontmatter metadata by default.
+6. Stakeholder HTML **MUST** be structured (Foundation via [`foundation-site`](../foundation-site/SKILL.md) / improved assembler) — **not** a whole-report `<pre>` or Markdown paste. Tables and callouts as real HTML. Links to other repo files in that HTML/MD **MUST** be GitHub `blob/main` / `tree/main` URLs ([`github-paths`](../../git/github-paths/SKILL.md)), not `../` relatives or local OS paths. Top bar collapses frontmatter metadata by default.
 7. Keep modular sections; bottom references section contains repo references only without duplicating redundant framework tables (which are cited inline per-threat).
 8. After drafting narrative prose, apply [`anti-slop`](../anti-slop/SKILL.md) then [`humanizer`](../humanizer/SKILL.md) in this session — do not re-spawn artifact-agent for a quality pass. Skip out-of-scope surfaces (exact ID strings, schemas, security MUST quotes kept exact).
 

@@ -61,7 +61,7 @@ High: Enforces the Source Credibility Hierarchy across the repository. Unverifie
 4. Update the corresponding topic page under `references/valid-sources/` (e.g. `cloud-and-infrastructure.md`, `ai-platforms-and-models.md`, `security-and-compliance.md`, `identity-and-access.md`, or `software-and-devops.md`).
 5. Register normalized domain entries into `references/valid-sources/catalogs/authoritative-domains.json`.
 6. Run `python scripts/references/validate_references.py` to ensure schema and registry consistency.
-7. For narrative paraphrases, apply [`anti-slop`](..\..\reporting\anti-slop\SKILL.md) then [`humanizer`](..\..\reporting\humanizer\SKILL.md) in-session before returning.
+7. For narrative paraphrases, apply [`anti-slop`](../../reporting/anti-slop/SKILL.md) then [`humanizer`](../../reporting/humanizer/SKILL.md) in-session before returning.
 
 ## Dry run
 
