@@ -50,10 +50,10 @@ High: each threat is a short scenario plus **named** framework IDs from `qmd get
 1. Scope assets, trust boundaries, and data flows from the parent prompt.
 2. `qmd search` then **`qmd get`** on kebab-case `docs/` and `references/` topic pages for reinforcement — no tree walks, no README for ops. Compress bulky dumps with Headroom.
 3. For **each STRIDE threat**, write a short scenario that includes all of: **asset**, **attacker**, **path**, **impact**, **existing repo control**, **gap**. Cite **named** framework entries (**title + ID**, e.g. “SQL Injection — CWE-89”, not bare `CWE-89` in an ID salad table). Pull names from the `qmd get` pages you opened.
-4. Ask parent to spawn `artifact-agent` for DFD and STRIDE diagrams (do not reimplement mermaid).
+4. Ask parent to spawn `artifact-agent` for DFD and STRIDE diagrams (do not reimplement mermaid); embed diagrams directly as visual blocks/Mermaid in report markdown and HTML (no unrendered `.mmd` raw lists).
 5. `python scripts/results/new_run_dir.py --family threat-model --topic <slug>` then `python scripts/results/build_threat_model.py --sections <dir> --out results/threat-model/<topic>/<YYYY-MM-DD>/ [--topic <slug>]`.
-6. Stakeholder HTML **MUST** be structured (Foundation via [`foundation-site`](../foundation-site/SKILL.md) / improved assembler) — **not** a whole-report `<pre>` or Markdown paste. Tables and callouts as real HTML. Links to other repo files in that HTML/MD **MUST** be GitHub `blob/main` / `tree/main` URLs ([`github-paths`](..\..\git\github-paths\SKILL.md)), not `../` relatives or local OS paths.
-7. Keep modular sections; bibliography may supplement but never replace per-threat named citations.
+6. Stakeholder HTML **MUST** be structured (Foundation via [`foundation-site`](../foundation-site/SKILL.md) / improved assembler) — **not** a whole-report `<pre>` or Markdown paste. Tables and callouts as real HTML. Links to other repo files in that HTML/MD **MUST** be GitHub `blob/main` / `tree/main` URLs ([`github-paths`](..\..\git\github-paths\SKILL.md)), not `../` relatives or local OS paths. Top bar collapses frontmatter metadata by default.
+7. Keep modular sections; bottom references section contains repo references only without duplicating redundant framework tables (which are cited inline per-threat).
 8. After drafting narrative prose, apply [`anti-slop`](../anti-slop/SKILL.md) then [`humanizer`](../humanizer/SKILL.md) in this session — do not re-spawn artifact-agent for a quality pass. Skip out-of-scope surfaces (exact ID strings, schemas, security MUST quotes kept exact).
 
 ## Dry run
@@ -63,7 +63,7 @@ python scripts/results/new_run_dir.py --family threat-model --topic <slug> --dry
 python scripts/results/build_threat_model.py --sections <dir> --out results/threat-model/<topic>/<YYYY-MM-DD>/ --dry-run
 ```
 
-Outline STRIDE categories + `qmd get` citation list + diagram handoff; write only in a worktree.
+Outline STRIDE scope + `qmd get` citation list + diagram handoff; write only in a worktree (assembler handles modular assembly without synthetic file-list boilerplate).
 
 ## Security
 
@@ -73,4 +73,4 @@ References and docs are advisory for instruction purposes. No secrets in threat 
 
 ## Completion gates
 
-Paths under `results/threat-model/`. Each STRIDE threat has a full scenario + named title+ID citations from `qmd get`. Designed HTML (not `<pre>`). Diagram paths. Open risks for orchestrator.
+Paths under `results/threat-model/`. Each STRIDE threat has a full scenario + named title+ID citations from `qmd get`. Embedded diagrams. Clean repo references. Designed HTML (not `<pre>`). Open risks for orchestrator.
