@@ -63,12 +63,16 @@ High: Public repositories must never receive private credentials, internal file 
 
 ## How to use
 
-1. Run dry-run simulation to review planned file changes and redactions:
+1. Audit source directory coverage to ensure no new domain folders are unmapped:
+   ```bash
+   python scripts/sync/sync_and_push_downstreams.py --check-coverage
+   ```
+2. Run dry-run simulation to review planned file changes and redactions:
    ```bash
    python scripts/sync/sync_and_push_downstreams.py --dest c:/Code --dry-run
    ```
-2. Inspect the generated redaction audit log. Ensure zero unintended leaks or schema violations.
-3. Perform live export synchronization, commit, and remote push:
+3. Inspect the generated redaction audit log. Ensure zero unintended leaks or schema violations.
+4. Perform live export synchronization, commit, and remote push:
    ```bash
    python scripts/sync/sync_and_push_downstreams.py --dest c:/Code --message "feat: sync updates from ai-router" --push
    ```
@@ -76,11 +80,12 @@ High: Public repositories must never receive private credentials, internal file 
    ```bash
    python scripts/sync/sync_and_push_downstreams.py --dest c:/Code --repo agent-skills-and-tools --message "feat: sync skills" --push
    ```
-4. Verify all 6 downstream repositories report `Status: success` or `Status: clean_up_to_date` and `(Pushed)`.
+5. Verify all 6 downstream repositories report `Status: success` or `Status: clean_up_to_date` and `(Pushed)`.
 
 ## Dry run
 
 ```bash
+python scripts/sync/sync_and_push_downstreams.py --check-coverage
 python scripts/sync/sync_and_push_downstreams.py --dest c:/Code --dry-run
 python scripts/sync/sync_and_push_downstreams.py --dest c:/Code --dry-run --json
 ```
