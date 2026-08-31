@@ -31,7 +31,7 @@ Orchestrate the end-to-end export, sanitization, git commit, and remote push lif
 
 ## When to use
 
-Publishing synchronized updates, new skills, security standards, industry references, benchmark research, or generic wiki harness template changes to public downstream repositories:
+Publishing synchronized updates, new skills, security standards, industry references, benchmark research, or generic harness template changes to public downstream repositories:
 
 1. `agent-skills-and-tools`
 2. `agent-standards`
