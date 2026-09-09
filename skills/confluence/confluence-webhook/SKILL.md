@@ -2,7 +2,7 @@
 name: confluence-webhook
 description: >-
   Configure, simulate, verify, and process Confluence Cloud and Atlassian Forge webhook events. Use when handling page or space lifecycle triggers, verifying HMAC-SHA256 signatures, validating webhook payloads, or integrating CI/CD event listeners.
-owner_agent: docs-collab-agent
+owner_agent: document-operator
 rank: high
 isolation: mutate
 schema_version: 2.0.0

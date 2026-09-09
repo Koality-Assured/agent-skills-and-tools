@@ -9,7 +9,7 @@ description: >-
   Cursor, xAI, Meta AI, Mistral AI, DeepSeek, Microsoft, or BenchLM. Do not use for
   antagonistic code review (antagonistic-review) or general architectural research
   writeups (deep-research).
-owner_agent: detailed-activity
+owner_agent: research-operator
 rank: high
 isolation: mutate
 on_failure: continue_with_partial

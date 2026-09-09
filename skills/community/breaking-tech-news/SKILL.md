@@ -7,7 +7,7 @@ description: >-
   community alerts. Use when checking for immediate breaking security advisories, high-severity
   vulnerabilities, or unannounced frontier AI model drops. Do not use for scheduled weekly vendor
   briefings (ai-vendor-updates).
-owner_agent: community-analyst
+owner_agent: research-operator
 rank: high
 isolation: mutate
 on_failure: continue_with_partial

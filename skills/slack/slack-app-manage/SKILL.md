@@ -2,7 +2,7 @@
 name: slack-app-manage
 description: >-
   Generate, lint, validate, and convert declarative Slack App Manifests across YAML and JSON formats with least-privilege OAuth scope enforcement. Use when scaffolding new Slack apps, validating manifest schemas, converting manifests between formats, or configuring app features and event subscriptions.
-owner_agent: chat-collab-agent
+owner_agent: document-operator
 rank: high
 isolation: mutate
 schema_version: 2.0.0

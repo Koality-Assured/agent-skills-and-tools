@@ -6,7 +6,7 @@ description: >-
   cloud organizational units, accounts, projects, subscriptions, or validating
   hierarchical guardrails. Do not use for day-to-day read-only cloud inventory
   (aws-read/gcp-read/azure-read) or without explicit human authorization.
-owner_agent: cloud-admin-agent
+owner_agent: cloud-operator
 rank: high
 isolation: mutate
 schema_version: 2.0.0

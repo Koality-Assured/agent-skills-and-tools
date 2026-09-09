@@ -6,7 +6,7 @@ description: >-
   workspaces, verifying data retention and privacy policies, managing spend caps,
   or rotating service keys across OpenAI, Anthropic, and Google AI platforms.
   Do not use for code-level prompt authoring or without human authorization for key changes.
-owner_agent: public-llm-admin
+owner_agent: cloud-operator
 rank: high
 isolation: mutate
 schema_version: 2.0.0

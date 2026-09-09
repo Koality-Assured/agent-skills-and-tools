@@ -7,7 +7,7 @@ description: >-
   and subreddits. Use when facing undocumented exceptions, cryptic compiler errors, upstream
   SDK regressions, or environment-specific bugs with no official vendor solution. Do not use
   for standard code-review without error context (code-review-report).
-owner_agent: community-analyst
+owner_agent: research-operator
 rank: high
 isolation: mutate
 on_failure: continue_with_partial

@@ -7,7 +7,7 @@ description: >-
   Use when exploring new product ideas, assessing market white-spaces in developer tooling/AI,
   or identifying tooling gaps in existing ecosystems. Do not use for commercial pricing
   comparisons alone (benchlm-lookup).
-owner_agent: community-analyst
+owner_agent: research-operator
 rank: high
 isolation: mutate
 on_failure: continue_with_partial

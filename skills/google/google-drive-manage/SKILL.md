@@ -2,7 +2,7 @@
 name: google-drive-manage
 description: >-
   Search Google Drive in bulk, create new files from results, update existing files on change, synchronize corpus materials down, and validate formatting and cleanliness. Use when creating files in Drive, searching Drive files in bulk, updating associated Drive documents, or synchronizing materials down to the local corpus. Do not use for domain-level Workspace admin settings (google-workspace-admin) or Gmail operations (google-gmail-manage).
-owner_agent: google-suite-operator
+owner_agent: document-operator
 rank: high
 isolation: mutate
 schema_version: 2.0.0

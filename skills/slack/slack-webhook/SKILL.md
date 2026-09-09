@@ -2,7 +2,7 @@
 name: slack-webhook
 description: >-
   Dispatch incoming Slack webhooks and verify inbound webhook request signatures using HMAC-SHA256 and timestamp replay protection. Use when sending alert webhooks to Slack, verifying incoming Events API or Slash Command HTTP requests, or building webhook endpoint handlers.
-owner_agent: chat-collab-agent
+owner_agent: document-operator
 rank: high
 isolation: mutate
 schema_version: 2.0.0

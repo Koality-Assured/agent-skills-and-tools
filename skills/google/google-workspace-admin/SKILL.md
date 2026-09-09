@@ -2,7 +2,7 @@
 name: google-workspace-admin
 description: >-
   Google Workspace domain administration, organizational units (OUs), license management, 2FA/SSO enforcement, DLP, Zero Data Retention (ZDR), and external sharing audits. Use when auditing Workspace domain settings, managing OU policies, verifying ZDR/DLP compliance, or checking license allocation. Do not use for day-to-day user email/drive interactions (google-drive-manage/google-gmail-manage).
-owner_agent: google-suite-admin
+owner_agent: document-operator
 rank: high
 isolation: mutate
 schema_version: 2.0.0

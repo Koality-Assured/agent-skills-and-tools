@@ -7,7 +7,7 @@ description: >-
   diagrams via artifact-agent, assembled to md+structured HTML under
   results/threat-model/. Use when the human asks for a threat model. Do not
   reimplement mermaid (spawn mermaid-diagram / architecture-diagram).
-owner_agent: assessment-agent
+owner_agent: security-tooling-operator
 rank: high
 isolation: mutate
 contracts:

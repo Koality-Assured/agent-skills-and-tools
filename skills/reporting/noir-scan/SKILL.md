@@ -7,7 +7,7 @@ description: >-
   and shadow APIs before or beside code-review-report. Do not use as a
   substitute for code-review-report or antagonistic-review, or as classic
   vulnerability SAST.
-owner_agent: artifact-agent
+owner_agent: security-tooling-operator
 rank: medium
 isolation: mutate
 contracts:

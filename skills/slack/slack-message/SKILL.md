@@ -2,7 +2,7 @@
 name: slack-message
 description: >-
   Compose, format, preview, and dispatch rich text and Block Kit messages to Slack channels, threads, and direct messages across workspaces. Use when sending Slack notifications, formatting Block Kit alert cards, querying channel message histories, or updating existing Slack messages.
-owner_agent: chat-collab-agent
+owner_agent: document-operator
 rank: high
 isolation: mutate
 schema_version: 2.0.0

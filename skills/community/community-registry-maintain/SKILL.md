@@ -6,7 +6,7 @@ description: >-
   references/socials/. Use when adding new developer forums or subreddits, recalculating
   community reliability scores, auditing signal drift, or validating the social registry
   against schema rules. Do not use for standard reference framework maintenance (reference-maintain).
-owner_agent: community-analyst
+owner_agent: research-operator
 rank: high
 isolation: mutate
 on_failure: abort_and_rollback

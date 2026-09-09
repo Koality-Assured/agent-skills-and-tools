@@ -6,7 +6,7 @@ description: >-
   report via build_tabler_dashboard.py. Use when a report needs visual
   metrics or tabular summary UI. Do not use for durable docs/ pages
   (doc-builder) or full Foundation report chrome (foundation-site).
-owner_agent: artifact-agent
+owner_agent: document-operator
 rank: medium
 isolation: mutate
 contracts:

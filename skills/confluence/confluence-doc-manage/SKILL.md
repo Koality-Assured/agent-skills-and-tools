@@ -2,7 +2,7 @@
 name: confluence-doc-manage
 description: >-
   Create, update, retrieve, search, and organize Confluence pages, spaces, and documentation trees across workspaces using REST API v2 and CQL. Use when publishing markdown or ADF documents to Confluence, querying page hierarchies, searching content with CQL, or updating existing documentation.
-owner_agent: docs-collab-agent
+owner_agent: document-operator
 rank: high
 isolation: mutate
 schema_version: 2.0.0

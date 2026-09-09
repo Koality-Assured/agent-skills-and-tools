@@ -2,7 +2,7 @@
 name: google-gmail-manage
 description: >-
   Search Gmail messages in bulk, read email details, draft new emails without sending, and send drafted emails under explicit human authorization. Use when drafting emails, reading email threads, searching messages in bulk, or sending authorized email communications. Do not use for unauthorized email delivery or Drive file management (google-drive-manage).
-owner_agent: google-suite-operator
+owner_agent: document-operator
 rank: high
 isolation: mutate
 schema_version: 2.0.0

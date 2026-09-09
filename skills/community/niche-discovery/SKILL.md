@@ -7,7 +7,7 @@ description: >-
   looking for lesser-known alternatives, boutique quantization kernels, specialized agent
   frameworks, or innovative community hacks. Do not use for mainstream vendor evaluations
   (ai-vendor-updates).
-owner_agent: community-analyst
+owner_agent: research-operator
 rank: high
 isolation: mutate
 on_failure: continue_with_partial

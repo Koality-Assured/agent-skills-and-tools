@@ -2,7 +2,7 @@
 name: slack-admin
 description: >-
   Audit Slack workspace security configurations, Single Sign-On (SSO) enforcement, public channel sprawl, user role hierarchy, and compliance posture. Use when auditing Slack workspace security baselines, checking user roles, verifying app approval policies, or evaluating compliance for koality-assured or enterprise workspaces.
-owner_agent: chat-collab-agent
+owner_agent: document-operator
 rank: high
 isolation: mutate
 schema_version: 2.0.0

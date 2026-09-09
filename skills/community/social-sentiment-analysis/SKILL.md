@@ -7,7 +7,7 @@ description: >-
   developer perception of model releases, developer tooling feedback, migration friction,
   or community consensus on technologies. Do not use for automated customer support sentiment
   or internal employee communications.
-owner_agent: community-analyst
+owner_agent: research-operator
 rank: high
 isolation: mutate
 on_failure: continue_with_partial

@@ -7,7 +7,7 @@ description: >-
   technical timelines, tracing unannounced feature infrastructure, evaluating researcher
   departure/arrival signals, or mapping public open-source affiliations. Do not use for
   illicit surveillance, private data gathering, or PII harvesting.
-owner_agent: community-analyst
+owner_agent: research-operator
 rank: high
 isolation: mutate
 on_failure: continue_with_partial

@@ -2,7 +2,7 @@
 name: downstream-repo-update
 description: >-
   Orchestrate end-to-end synchronization, sanitization, git commit, and remote push across all public downstream ecosystem repositories (agent-skills-and-tools, agent-standards, security-standards, industry-references, ai-research-and-benchmarks, ai-harness-core). Use when publishing repository updates, new skills, standards, or template refinements to public GitHub remotes. Do not use for internal branch merges within ai-router.
-owner_agent: repo-sync-ops
+owner_agent: harness-operator
 rank: high
 isolation: mutate
 schema_version: 2.0.0

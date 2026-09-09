@@ -2,7 +2,7 @@
 name: google-workspace-metadata
 description: >-
   Collect cross-service metadata across Google Drive, Gmail, Docs, Users, Calendar, and Contacts. Use when inspecting metadata, permissions, resource relationships, or entity schemas across Google Suite. Do not use for file mutations (google-drive-manage) or domain admin policy enforcement (google-workspace-admin).
-owner_agent: google-suite-operator
+owner_agent: document-operator
 rank: medium
 isolation: read-only
 schema_version: 2.0.0

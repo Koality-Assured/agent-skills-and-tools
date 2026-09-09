@@ -2,7 +2,7 @@
 name: confluence-admin
 description: >-
   Audit, configure, and govern Confluence space permissions, page restrictions, user access, space export, retention, and compliance policies. Use when auditing space security postures, inspecting page access restrictions, reviewing permission matrices, or exporting space archives.
-owner_agent: docs-collab-agent
+owner_agent: document-operator
 rank: high
 isolation: mutate
 schema_version: 2.0.0

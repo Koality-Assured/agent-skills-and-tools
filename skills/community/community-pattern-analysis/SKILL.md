@@ -7,7 +7,7 @@ description: >-
   community is solving recurring engineering problems, identifying emergent architectural
   best practices, or mapping trend velocity across subreddits and forums. Do not use for
   single-issue bug troubleshooting (community-troubleshooting).
-owner_agent: community-analyst
+owner_agent: research-operator
 rank: high
 isolation: mutate
 on_failure: continue_with_partial

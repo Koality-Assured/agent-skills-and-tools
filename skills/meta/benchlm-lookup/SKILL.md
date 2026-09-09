@@ -9,7 +9,7 @@ description: >-
   ratios, selecting cost-efficient models for routing, or reviewing benchmark provenance.
   Do not use for general multi-topic research investigations (deep-research) or adversarial
   plan review (antagonistic-review).
-owner_agent: detailed-activity
+owner_agent: research-operator
 rank: high
 isolation: read-only
 on_failure: abort_and_rollback

@@ -2,7 +2,7 @@
 name: confluence-app-manage
 description: >-
   Scaffold, validate, lint, and manage declarative Confluence Forge app manifests (manifest.yml) and Connect descriptors (atlassian-connect.json). Use when authoring Atlassian Forge apps, defining Confluence UI modules, configuring OAuth 2.0 scopes, or auditing app permissions for least privilege.
-owner_agent: docs-collab-agent
+owner_agent: document-operator
 rank: high
 isolation: mutate
 schema_version: 2.0.0

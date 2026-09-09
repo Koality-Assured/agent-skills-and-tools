@@ -7,7 +7,7 @@ description: >-
   proposal, code-review, or threat-model output should ship as responsive
   HTML — not a Markdown paste. Do not use for durable docs/ corpus pages
   (doc-builder) or Tabler stats dashboards alone (tabler-dashboard).
-owner_agent: artifact-agent
+owner_agent: document-operator
 rank: medium
 isolation: mutate
 contracts:

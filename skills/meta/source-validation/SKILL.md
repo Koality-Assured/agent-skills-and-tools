@@ -9,7 +9,7 @@ description: >-
   portals, or auditing citations for empirical grounding. Do not use for
   general framework capture (reference-maintain) or deep research investigations
   (deep-research).
-owner_agent: reference-ops
+owner_agent: document-operator
 rank: high
 isolation: mutate
 on_failure: abort_and_rollback
