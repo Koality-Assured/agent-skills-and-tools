@@ -33,13 +33,15 @@ Medium: reinforcement inventory; findings still need human/agent judgment and CW
 
 ## Source of truth
 
-- [`supporting/noir/agent-scan.md`](../../../../supporting/noir/agent-scan.md)
+- `supporting/noir/agent-scan.md` (`../../../../supporting/noir/agent-scan.md`; ai-router-only, optional provenance)
 - `python scripts/results/run_noir_scan.py` (only allowed invoke path)
 - Upstream: [owasp-noir/noir](https://github.com/owasp-noir/noir), [docs](https://owasp-noir.github.io/noir/)
 
 ## Isolation
 
-`mutate`. Parent spawns `artifact-agent` with area `results` (read the target codebase paths as scoped).
+Standalone dispatch: Follow the destination's isolation and dispatch rules. Use a registered local operator or continue in-session when those rules permit; report a capability gap if no local path supports the work.
+
+`mutate`. In ai-router, the parent spawns `artifact-agent` with area `results` (read the target codebase paths as scoped).
 
 ## How to use
 

@@ -39,7 +39,9 @@ High: subcategory IDs must come from local reference topic files via qmd — nev
 
 ## Isolation
 
-`mutate`. Parent spawns `artifact-agent` with area `results`.
+Standalone dispatch: Follow the destination's isolation and dispatch rules. Use a registered local operator or continue in-session when those rules permit; report a capability gap if no local path supports the work.
+
+`mutate`. In ai-router, the parent spawns `artifact-agent` with area `results`.
 
 ## How to use
 
@@ -48,7 +50,7 @@ High: subcategory IDs must come from local reference topic files via qmd — nev
 3. Map controls; note gaps and other families present.
 4. `python scripts/results/new_run_dir.py --family reports --topic <slug> --type framework-map` → `results/reports/framework-map/<topic>/<YYYY-MM-DD>/`.
 5. `python scripts/results/build_document.py --type framework-map --sections <dir> --out results/reports/framework-map/<topic>/<YYYY-MM-DD>/`.
-6. If local catalogs are missing/stale, recommend parent spawn `reference-ops` / `reference-maintain`.
+6. In ai-router, if local catalogs are missing or stale, recommend handoff to `reference-ops` / `reference-maintain`. Standalone repositories follow local catalog rules or report a capability gap.
 7. After drafting narrative map text, apply [`anti-slop`](../anti-slop/SKILL.md) then [`humanizer`](../humanizer/SKILL.md) in this session — do not re-spawn artifact-agent for a quality pass on your own draft. Skip out-of-scope surfaces (IDs, schemas, machine tables).
 
 ## Dry run

@@ -33,11 +33,13 @@ Medium: default for read; stop if credentials would need to be stored in-repo.
 
 - GCP CLI/SDK via OAuth or named profiles
 - `python scripts/results/new_run_dir.py --family research --topic <slug>`
-- [`ai-tooling/a2a/interaction-protocol.md`](../../../../ai-tooling/a2a/interaction-protocol.md)
+- `ai-tooling/a2a/interaction-protocol.md` (`../../../../ai-tooling/a2a/interaction-protocol.md`; ai-router-only, optional provenance)
 
 ## Isolation
 
-`mutate` because summaries write `results/`. Parent spawns `cloud-operator` with area `results`.
+Standalone dispatch: Follow the destination's isolation and dispatch rules. Use a registered local operator or continue in-session when those rules permit; report a capability gap if no local path supports the work.
+
+`mutate` because summaries write `results/`. In ai-router, the parent spawns `cloud-operator` with area `results`.
 
 ## How to use
 

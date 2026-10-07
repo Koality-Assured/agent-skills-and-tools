@@ -50,9 +50,9 @@ High. Space permissions and restrictions enforce confidentiality boundaries acro
 ## Source of truth
 
 - CLI tool: `scripts/confluence/confluence_admin.py`
-- Administration standard: [`docs/standards/confluence-interaction-and-administration.md`](../../../../docs/standards/confluence-interaction-and-administration.md)
-- SaaS security standard: [`docs/standards/saas-security.md`](../../../../docs/standards/saas-security.md)
-- Workspace governance guide: [`docs/guidance/confluence-workspace-and-page-governance.md`](../../../../docs/guidance/confluence-workspace-and-page-governance.md)
+- Administration standard: `docs/standards/confluence-interaction-and-administration.md` (`../../../../docs/standards/confluence-interaction-and-administration.md`; ai-router-only, optional provenance)
+- SaaS security standard: `docs/standards/saas-security.md` (`../../../../docs/standards/saas-security.md`; ai-router-only, optional provenance)
+- Workspace governance guide: `docs/guidance/confluence-workspace-and-page-governance.md` (`../../../../docs/guidance/confluence-workspace-and-page-governance.md`; ai-router-only, optional provenance)
 
 ## Isolation
 

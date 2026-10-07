@@ -48,8 +48,8 @@ High. Administrative modifications impact organization-wide security perimeters,
 ## Source of truth
 
 - Administration CLI: `scripts/google/google_suite_admin.py`
-- Interaction & Admin Standard: [`docs/standards/google-suite-interaction-and-administration.md`](../../../../docs/standards/google-suite-interaction-and-administration.md)
-- Reference Security: [`references/google-workspace-security/workspace-admin-security.md`](../../../../references/google-workspace-security/workspace-admin-security.md)
+- Interaction & Admin Standard: `docs/standards/google-suite-interaction-and-administration.md` (`../../../../docs/standards/google-suite-interaction-and-administration.md`; ai-router-only, optional provenance)
+- Reference Security: `references/google-workspace-security/workspace-admin-security.md` (`../../../../references/google-workspace-security/workspace-admin-security.md`; ai-router-only, optional provenance)
 
 ## Isolation
 

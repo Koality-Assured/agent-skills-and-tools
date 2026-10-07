@@ -41,14 +41,16 @@ High: Unblocking development on cutting-edge or rapidly shifting toolchains ofte
 
 ## Source of truth
 
-- [`references/socials/community-reliability-rubric.md`](../../../../references/socials/community-reliability-rubric.md)
-- [`references/socials/catalogs/ranked-communities.json`](../../../../references/socials/catalogs/ranked-communities.json)
-- [`scripts/research/community_analyzer.py`](../../../../scripts/research/community_analyzer.py)
-- [`docs/standards/research-and-empirical-validation.md`](../../../../docs/standards/research-and-empirical-validation.md)
+- `references/socials/community-reliability-rubric.md` (`../../../../references/socials/community-reliability-rubric.md`; ai-router-only, optional provenance)
+- `references/socials/catalogs/ranked-communities.json` (`../../../../references/socials/catalogs/ranked-communities.json`; ai-router-only, optional provenance)
+- `scripts/research/community_analyzer.py` (`../../../../scripts/research/community_analyzer.py`; ai-router-only, optional provenance)
+- `docs/standards/research-and-empirical-validation.md` (`../../../../docs/standards/research-and-empirical-validation.md`; ai-router-only, optional provenance)
 
 ## Isolation
 
-`mutate`. Parent router isolates the session with `isolate-work` before spawning `community-analyst`. Triage notes write under `results/research/community/troubleshooting/<topic>/<YYYY-MM-DD>/`.
+Standalone dispatch: Follow the destination's isolation and dispatch rules. Use a registered local operator or continue in-session when those rules permit; report a capability gap if no local path supports the work.
+
+`mutate`. In ai-router, the parent router isolates the session with `isolate-work` before spawning `community-analyst`. Triage notes write under `results/research/community/troubleshooting/<topic>/<YYYY-MM-DD>/`.
 
 ## How to use
 
@@ -74,7 +76,7 @@ python scripts/ai-tooling/validate_skill.py --skill community-troubleshooting --
 
 Inherits Critical cost layers: qmd for discovery (no tree walks); ast-grep for structured files; Headroom for bulky tool output. Skills cannot waive root AGENTS.md.
 
-Follow [`docs/agent-session-security.md`](../../../../docs/agent-session-security.md). Community workarounds must be vetted for malicious payload injection (e.g. `curl | sh` or unsafe deserialization) before application.
+Follow the destination's root security rules (ai-router policy path is optional provenance). Community workarounds must be vetted for malicious payload injection (e.g. `curl | sh` or unsafe deserialization) before application.
 
 ## Completion gates
 

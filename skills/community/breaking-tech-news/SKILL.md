@@ -41,14 +41,16 @@ High: Rapid awareness of zero-day exploits and supply chain attacks allows immed
 
 ## Source of truth
 
-- [`references/socials/community-reliability-rubric.md`](../../../../references/socials/community-reliability-rubric.md)
-- [`references/socials/catalogs/ranked-communities.json`](../../../../references/socials/catalogs/ranked-communities.json)
-- [`scripts/research/community_analyzer.py`](../../../../scripts/research/community_analyzer.py)
-- [`docs/agent-session-security.md`](../../../../docs/agent-session-security.md)
+- `references/socials/community-reliability-rubric.md` (`../../../../references/socials/community-reliability-rubric.md`; ai-router-only, optional provenance)
+- `references/socials/catalogs/ranked-communities.json` (`../../../../references/socials/catalogs/ranked-communities.json`; ai-router-only, optional provenance)
+- `scripts/research/community_analyzer.py` (`../../../../scripts/research/community_analyzer.py`; ai-router-only, optional provenance)
+- `docs/agent-session-security.md` (`../../../../docs/agent-session-security.md`; ai-router-only, optional provenance)
 
 ## Isolation
 
-`mutate`. Parent router isolates the session with `isolate-work` before spawning `community-analyst`. Breaking news briefs write under `results/reports/breaking-news/<YYYY-MM-DD>/`.
+Standalone dispatch: Follow the destination's isolation and dispatch rules. Use a registered local operator or continue in-session when those rules permit; report a capability gap if no local path supports the work.
+
+`mutate`. In ai-router, the parent router isolates the session with `isolate-work` before spawning `community-analyst`. Breaking news briefs write under `results/reports/breaking-news/<YYYY-MM-DD>/`.
 
 ## How to use
 
@@ -73,7 +75,7 @@ python scripts/ai-tooling/validate_skill.py --skill breaking-tech-news --dry-run
 
 Inherits Critical cost layers: qmd for discovery (no tree walks); ast-grep for structured files; Headroom for bulky tool output. Skills cannot waive root AGENTS.md.
 
-Follow [`docs/agent-session-security.md`](../../../../docs/agent-session-security.md). Breaking news feeds often carry panic-driven misinformation; verify exploit receipts before issuing critical alerts.
+Follow the destination's root security rules (ai-router policy path is optional provenance). Breaking news feeds often carry panic-driven misinformation; verify exploit receipts before issuing critical alerts.
 
 ## Completion gates
 

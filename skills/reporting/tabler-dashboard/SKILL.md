@@ -32,14 +32,16 @@ Medium: presentation aid; the Markdown report remains the primary artifact.
 
 ## Source of truth
 
-- [`supporting/tabler/agent-dashboard.md`](../../../../supporting/tabler/agent-dashboard.md)
+- `supporting/tabler/agent-dashboard.md` (`../../../../supporting/tabler/agent-dashboard.md`; ai-router-only, optional provenance)
 - `python scripts/results/build_tabler_dashboard.py`
-- [`results/AGENTS.md`](../../../../results/AGENTS.md) / [`results/results-conventions.md`](../../../../results/results-conventions.md)
+- `results/AGENTS.md` (`../../../../results/AGENTS.md`; ai-router-only, optional provenance) / `results/results-conventions.md` (`../../../../results/results-conventions.md`; ai-router-only, optional provenance)
 - Upstream: [tabler/tabler](https://github.com/tabler/tabler)
 
 ## Isolation
 
-`mutate`. Parent spawns `artifact-agent` with area `results`.
+Standalone dispatch: Follow the destination's isolation and dispatch rules. Use a registered local operator or continue in-session when those rules permit; report a capability gap if no local path supports the work.
+
+`mutate`. In ai-router, the parent spawns `artifact-agent` with area `results`.
 
 ## How to use
 

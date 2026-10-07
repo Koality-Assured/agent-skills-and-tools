@@ -48,8 +48,8 @@ High. App Manifests define the complete permission perimeter and security bounda
 ## Source of truth
 
 - CLI tool: `scripts/slack/slack_app_manifest.py`
-- App standard: [`docs/standards/slack-app-development-and-webhooks.md`](../../../../docs/standards/slack-app-development-and-webhooks.md)
-- Manifest guide: [`supporting/slack/app-manifest-guide.md`](../../../../supporting/slack/app-manifest-guide.md)
+- App standard: `docs/standards/slack-app-development-and-webhooks.md` (`../../../../docs/standards/slack-app-development-and-webhooks.md`; ai-router-only, optional provenance)
+- Manifest guide: `supporting/slack/app-manifest-guide.md` (`../../../../supporting/slack/app-manifest-guide.md`; ai-router-only, optional provenance)
 
 ## Isolation
 

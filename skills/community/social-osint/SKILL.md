@@ -41,14 +41,16 @@ High: Strategic intelligence often leaks or appears in public PRs, model cards, 
 
 ## Source of truth
 
-- [`references/socials/community-reliability-rubric.md`](../../../../references/socials/community-reliability-rubric.md)
-- [`references/socials/catalogs/ranked-communities.json`](../../../../references/socials/catalogs/ranked-communities.json)
-- [`docs/agent-session-security.md`](../../../../docs/agent-session-security.md)
-- [`docs/standards/research-and-empirical-validation.md`](../../../../docs/standards/research-and-empirical-validation.md)
+- `references/socials/community-reliability-rubric.md` (`../../../../references/socials/community-reliability-rubric.md`; ai-router-only, optional provenance)
+- `references/socials/catalogs/ranked-communities.json` (`../../../../references/socials/catalogs/ranked-communities.json`; ai-router-only, optional provenance)
+- `docs/agent-session-security.md` (`../../../../docs/agent-session-security.md`; ai-router-only, optional provenance)
+- `docs/standards/research-and-empirical-validation.md` (`../../../../docs/standards/research-and-empirical-validation.md`; ai-router-only, optional provenance)
 
 ## Isolation
 
-`mutate`. Parent router isolates the session with `isolate-work` before spawning `community-analyst`. OSINT dossiers write under `results/research/community/osint/<entity>/<YYYY-MM-DD>/`.
+Standalone dispatch: Follow the destination's isolation and dispatch rules. Use a registered local operator or continue in-session when those rules permit; report a capability gap if no local path supports the work.
+
+`mutate`. In ai-router, the parent router isolates the session with `isolate-work` before spawning `community-analyst`. OSINT dossiers write under `results/research/community/osint/<entity>/<YYYY-MM-DD>/`.
 
 ## How to use
 
@@ -74,7 +76,7 @@ python scripts/ai-tooling/validate_skill.py --skill social-osint --dry-run
 
 Inherits Critical cost layers: qmd for discovery (no tree walks); ast-grep for structured files; Headroom for bulky tool output. Skills cannot waive root AGENTS.md.
 
-Follow [`docs/agent-session-security.md`](../../../../docs/agent-session-security.md). No private PII, credentials, or confidential employee data in intelligence reports. Use only public, authorized data.
+Follow the destination's root security rules (ai-router policy path is optional provenance). No private PII, credentials, or confidential employee data in intelligence reports. Use only public, authorized data.
 
 ## Completion gates
 

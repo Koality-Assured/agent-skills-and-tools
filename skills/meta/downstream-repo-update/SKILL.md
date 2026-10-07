@@ -1,7 +1,7 @@
 ---
 name: downstream-repo-update
 description: >-
-  Orchestrate end-to-end synchronization, sanitization, git commit, and remote push across all public downstream ecosystem repositories (agent-skills-and-tools, agent-standards, security-standards, industry-references, ai-research-and-benchmarks, ai-harness-core). Use when publishing repository updates, new skills, standards, or template refinements to public GitHub remotes. Do not use for internal branch merges within ai-router.
+  Ai-router-internal workflow for synchronized, sanitized publication to its public downstream repositories. Use when publishing from a full ai-router checkout. This skill is not supported in a standalone export; use the destination repository's own release and security procedures there.
 owner_agent: harness-operator
 rank: high
 isolation: mutate
@@ -27,6 +27,8 @@ routing_hints: [downstream-repo-update, update-downstreams, push-downstreams, pu
 
 # Downstream repository update
 
+This procedure is for the full ai-router checkout only. It requires private repository mappings and sanitization tooling that are not included in the standalone skills export. Standalone users must not invoke it or treat its commands as a publishing procedure; follow the destination repository's own release and security rules.
+
 Orchestrate the end-to-end export, sanitization, git commit, and remote push lifecycle across the 6 public ecosystem repositories.
 
 ## When to use
@@ -51,9 +53,9 @@ High: Public repositories must never receive private credentials, internal file 
 
 ## Source of truth
 
-- [`scripts/sync/sync_and_push_downstreams.py`](../../../../scripts/sync/sync_and_push_downstreams.py)
-- [`scripts/sync/sync_public_repos.py`](../../../../scripts/sync/sync_public_repos.py)
-- [`docs/agent-session-security.md`](../../../../docs/agent-session-security.md)
+- `scripts/sync/sync_and_push_downstreams.py` (`../../../../scripts/sync/sync_and_push_downstreams.py`; ai-router-only, optional provenance)
+- `scripts/sync/sync_public_repos.py` (`../../../../scripts/sync/sync_public_repos.py`; ai-router-only, optional provenance)
+- `docs/agent-session-security.md` (`../../../../docs/agent-session-security.md`; ai-router-only, optional provenance)
 - [`ai-tooling/skills/meta/sync-downstream-repos/SKILL.md`](../sync-downstream-repos/SKILL.md)
 - [`ai-tooling/skills/meta/isolate-work/SKILL.md`](../isolate-work/SKILL.md)
 
@@ -94,7 +96,7 @@ python scripts/sync/sync_and_push_downstreams.py --dest c:/Code --dry-run --json
 
 Inherits Critical cost layers (qmd discovery, ast-grep for structured files, and Headroom for context compression). Skills cannot waive them.
 
-Follow [`docs/agent-session-security.md`](../../../../docs/agent-session-security.md). All public exports MUST be processed through the sanitization engine in `sync_public_repos.py`. Never bypass redaction filters, never commit live credentials or tokens into downstream export destinations, and ensure all redaction events are audited.
+Follow destination-local security rules. In the full ai-router checkout, all public exports MUST use its sanitization engine in `sync_public_repos.py`; that private tool is not included in standalone exports. Never bypass redaction filters or commit live credentials or tokens into downstream destinations, and audit all redaction events.
 
 ## Completion gates
 

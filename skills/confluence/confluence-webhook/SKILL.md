@@ -49,9 +49,9 @@ High. Inbound webhooks process untrusted HTTP traffic and must strictly validate
 ## Source of truth
 
 - CLI tool: `scripts/confluence/confluence_webhook.py`
-- Webhook standard: [`docs/standards/confluence-app-development-and-webhooks.md`](../../../../docs/standards/confluence-app-development-and-webhooks.md)
-- Architecture patterns: [`supporting/confluence/confluence-patterns.md`](../../../../supporting/confluence/confluence-patterns.md)
-- Setup guide: [`docs/guidance/confluence-app-setup-and-webhooks.md`](../../../../docs/guidance/confluence-app-setup-and-webhooks.md)
+- Webhook standard: `docs/standards/confluence-app-development-and-webhooks.md` (`../../../../docs/standards/confluence-app-development-and-webhooks.md`; ai-router-only, optional provenance)
+- Architecture patterns: `supporting/confluence/confluence-patterns.md` (`../../../../supporting/confluence/confluence-patterns.md`; ai-router-only, optional provenance)
+- Setup guide: `docs/guidance/confluence-app-setup-and-webhooks.md` (`../../../../docs/guidance/confluence-app-setup-and-webhooks.md`; ai-router-only, optional provenance)
 
 ## Isolation
 

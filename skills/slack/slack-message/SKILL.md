@@ -49,9 +49,9 @@ High. Outbound notifications are user-facing communications and must not contain
 ## Source of truth
 
 - CLI tool: `scripts/slack/slack_ops.py`
-- Interaction standard: [`docs/standards/slack-interaction-and-administration.md`](../../../../docs/standards/slack-interaction-and-administration.md)
-- Block Kit guide: [`supporting/slack/block-kit-guide.md`](../../../../supporting/slack/block-kit-guide.md)
-- Patterns: [`supporting/slack/slack-patterns.md`](../../../../supporting/slack/slack-patterns.md)
+- Interaction standard: `docs/standards/slack-interaction-and-administration.md` (`../../../../docs/standards/slack-interaction-and-administration.md`; ai-router-only, optional provenance)
+- Block Kit guide: `supporting/slack/block-kit-guide.md` (`../../../../supporting/slack/block-kit-guide.md`; ai-router-only, optional provenance)
+- Patterns: `supporting/slack/slack-patterns.md` (`../../../../supporting/slack/slack-patterns.md`; ai-router-only, optional provenance)
 
 ## Isolation
 

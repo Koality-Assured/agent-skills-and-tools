@@ -46,7 +46,7 @@ Medium. Read-only telemetry and metadata inspection.
 ## Source of truth
 
 - Tooling CLI: `scripts/google/google_suite_ops.py`
-- Security Reference: [`references/google-workspace-security/workspace-admin-security.md`](../../../../references/google-workspace-security/workspace-admin-security.md)
+- Security Reference: `references/google-workspace-security/workspace-admin-security.md` (`../../../../references/google-workspace-security/workspace-admin-security.md`; ai-router-only, optional provenance)
 
 ## Isolation
 

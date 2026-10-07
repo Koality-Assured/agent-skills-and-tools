@@ -49,8 +49,8 @@ High. Workspace administration audits evaluate organizational security perimeter
 ## Source of truth
 
 - CLI tool: `scripts/slack/slack_admin.py`
-- Admin standard: [`docs/standards/slack-interaction-and-administration.md`](../../../../docs/standards/slack-interaction-and-administration.md)
-- Reference baseline: [`references/slack-security/slack-security-baseline.md`](../../../../references/slack-security/slack-security-baseline.md)
+- Admin standard: `docs/standards/slack-interaction-and-administration.md` (`../../../../docs/standards/slack-interaction-and-administration.md`; ai-router-only, optional provenance)
+- Reference baseline: `references/slack-security/slack-security-baseline.md` (`../../../../references/slack-security/slack-security-baseline.md`; ai-router-only, optional provenance)
 
 ## Isolation
 

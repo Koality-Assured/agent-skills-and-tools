@@ -49,9 +49,9 @@ High. Application manifests dictate the security perimeters, data access permiss
 ## Source of truth
 
 - CLI tool: `scripts/confluence/confluence_app_manifest.py`
-- Development standard: [`docs/standards/confluence-app-development-and-webhooks.md`](../../../../docs/standards/confluence-app-development-and-webhooks.md)
-- App patterns: [`supporting/confluence/confluence-app-patterns.md`](../../../../supporting/confluence/confluence-app-patterns.md)
-- App setup guide: [`docs/guidance/confluence-app-setup-and-webhooks.md`](../../../../docs/guidance/confluence-app-setup-and-webhooks.md)
+- Development standard: `docs/standards/confluence-app-development-and-webhooks.md` (`../../../../docs/standards/confluence-app-development-and-webhooks.md`; ai-router-only, optional provenance)
+- App patterns: `supporting/confluence/confluence-app-patterns.md` (`../../../../supporting/confluence/confluence-app-patterns.md`; ai-router-only, optional provenance)
+- App setup guide: `docs/guidance/confluence-app-setup-and-webhooks.md` (`../../../../docs/guidance/confluence-app-setup-and-webhooks.md`; ai-router-only, optional provenance)
 
 ## Isolation
 

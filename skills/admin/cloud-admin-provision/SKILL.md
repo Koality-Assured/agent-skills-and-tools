@@ -43,15 +43,17 @@ High: modifies multi-account hierarchy and organizational guardrails.
 
 ## Source of truth
 
-- [`docs/guidance/cloud-aws-setup.md`](../../../../docs/guidance/cloud-aws-setup.md)
-- [`docs/guidance/cloud-gcp-setup.md`](../../../../docs/guidance/cloud-gcp-setup.md)
-- [`docs/guidance/cloud-azure-setup.md`](../../../../docs/guidance/cloud-azure-setup.md)
-- [`docs/standards/cloud-essentials.md`](../../../../docs/standards/cloud-essentials.md)
+- `docs/guidance/cloud-aws-setup.md` (`../../../../docs/guidance/cloud-aws-setup.md`; ai-router-only, optional provenance)
+- `docs/guidance/cloud-gcp-setup.md` (`../../../../docs/guidance/cloud-gcp-setup.md`; ai-router-only, optional provenance)
+- `docs/guidance/cloud-azure-setup.md` (`../../../../docs/guidance/cloud-azure-setup.md`; ai-router-only, optional provenance)
+- `docs/standards/cloud-essentials.md` (`../../../../docs/standards/cloud-essentials.md`; ai-router-only, optional provenance)
 - `python scripts/cloud/cloud_admin.py`
 
 ## Isolation
 
-`mutate`. Parent spawns `cloud-admin-agent` with area `results` (and `docs` if updating inventory). Mutating operations require explicit human authorization naming the target scope in the current turn.
+Standalone dispatch: Follow the destination's isolation and dispatch rules. Use a registered local operator or continue in-session when those rules permit; report a capability gap if no local path supports the work.
+
+`mutate`. In ai-router, the parent spawns `cloud-admin-agent` with area `results` (and `docs` if updating inventory). Mutating operations require explicit human authorization naming the target scope in the current turn.
 
 ## How to use
 

@@ -40,14 +40,16 @@ High: Maintains the integrity and reliability ratings of external community disc
 
 ## Source of truth
 
-- [`references/socials/community-reliability-rubric.md`](../../../../references/socials/community-reliability-rubric.md)
-- [`references/socials/catalogs/ranked-communities.json`](../../../../references/socials/catalogs/ranked-communities.json)
-- [`scripts/research/manage_social_registry.py`](../../../../scripts/research/manage_social_registry.py)
-- [`docs/standards/research-and-empirical-validation.md`](../../../../docs/standards/research-and-empirical-validation.md)
+- `references/socials/community-reliability-rubric.md` (`../../../../references/socials/community-reliability-rubric.md`; ai-router-only, optional provenance)
+- `references/socials/catalogs/ranked-communities.json` (`../../../../references/socials/catalogs/ranked-communities.json`; ai-router-only, optional provenance)
+- `scripts/research/manage_social_registry.py` (`../../../../scripts/research/manage_social_registry.py`; ai-router-only, optional provenance)
+- `docs/standards/research-and-empirical-validation.md` (`../../../../docs/standards/research-and-empirical-validation.md`; ai-router-only, optional provenance)
 
 ## Isolation
 
-`mutate`. Parent router isolates the session with `isolate-work` before spawning `community-analyst`. Edits land directly on `references/socials/`.
+Standalone dispatch: Follow the destination's isolation and dispatch rules. Use a registered local operator or continue in-session when those rules permit; report a capability gap if no local path supports the work.
+
+`mutate`. In ai-router, the parent router isolates the session with `isolate-work` before spawning `community-analyst`. Edits land directly on `references/socials/`.
 
 ## How to use
 
@@ -79,7 +81,7 @@ python scripts/ai-tooling/validate_skill.py --skill community-registry-maintain 
 
 Inherits Critical cost layers: qmd for discovery (no tree walks); ast-grep for structured files; Headroom for bulky tool output. Skills cannot waive root AGENTS.md.
 
-Follow [`docs/agent-session-security.md`](../../../../docs/agent-session-security.md). Community catalog URLs must be validated HTTPS endpoints; no unauthorized or malicious endpoints.
+Follow the destination's root security rules (ai-router policy path is optional provenance). Community catalog URLs must be validated HTTPS endpoints; no unauthorized or malicious endpoints.
 
 ## Completion gates
 

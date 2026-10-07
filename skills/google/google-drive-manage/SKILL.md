@@ -39,7 +39,7 @@ Search Google Drive in bulk, create and update files, synchronize corpus documen
 
 - Google Workspace domain administration and OU hierarchy (use `google-workspace-admin`).
 - Gmail drafting or email operations (use `google-gmail-manage`).
-- General cloud infrastructure provisioning (use `cloud-operator` / `cloud-admin-agent`).
+- General cloud infrastructure provisioning: use a destination-local cloud skill or the official provider CLI/API. In ai-router, this routes to `cloud-operator` / `cloud-admin-agent`; standalone repositories report a capability gap when no local provider path exists.
 
 ## Criticality
 
@@ -48,8 +48,8 @@ High. File creation and corpus synchronization directly impact documentation acc
 ## Source of truth
 
 - Tooling CLI: `scripts/google/google_suite_ops.py`
-- Interaction Standard: [`docs/standards/google-suite-interaction-and-administration.md`](../../../../docs/standards/google-suite-interaction-and-administration.md)
-- Reference Security: [`references/google-workspace-security/drive-docs-security.md`](../../../../references/google-workspace-security/drive-docs-security.md)
+- Interaction Standard: `docs/standards/google-suite-interaction-and-administration.md` (`../../../../docs/standards/google-suite-interaction-and-administration.md`; ai-router-only, optional provenance)
+- Reference Security: `references/google-workspace-security/drive-docs-security.md` (`../../../../references/google-workspace-security/drive-docs-security.md`; ai-router-only, optional provenance)
 
 ## Isolation
 

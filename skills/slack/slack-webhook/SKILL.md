@@ -47,8 +47,8 @@ High. Inbound webhooks must be authenticated to prevent remote unauthorized comm
 ## Source of truth
 
 - CLI tool: `scripts/slack/slack_ops.py`
-- App standard: [`docs/standards/slack-app-development-and-webhooks.md`](../../../../docs/standards/slack-app-development-and-webhooks.md)
-- Patterns: [`supporting/slack/slack-patterns.md`](../../../../supporting/slack/slack-patterns.md)
+- App standard: `docs/standards/slack-app-development-and-webhooks.md` (`../../../../docs/standards/slack-app-development-and-webhooks.md`; ai-router-only, optional provenance)
+- Patterns: `supporting/slack/slack-patterns.md` (`../../../../supporting/slack/slack-patterns.md`; ai-router-only, optional provenance)
 
 ## Isolation
 

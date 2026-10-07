@@ -47,8 +47,8 @@ High. Email dispatch is irreversible and communicates externally on behalf of th
 ## Source of truth
 
 - Tooling CLI: `scripts/google/google_suite_ops.py`
-- Reference Security: [`references/google-workspace-security/gmail-security.md`](../../../../references/google-workspace-security/gmail-security.md)
-- Interaction Standard: [`docs/standards/google-suite-interaction-and-administration.md`](../../../../docs/standards/google-suite-interaction-and-administration.md)
+- Reference Security: `references/google-workspace-security/gmail-security.md` (`../../../../references/google-workspace-security/gmail-security.md`; ai-router-only, optional provenance)
+- Interaction Standard: `docs/standards/google-suite-interaction-and-administration.md` (`../../../../docs/standards/google-suite-interaction-and-administration.md`; ai-router-only, optional provenance)
 
 ## Isolation
 

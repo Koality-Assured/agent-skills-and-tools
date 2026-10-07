@@ -37,7 +37,9 @@ Medium: default for log investigation; compress bulky log dumps.
 
 ## Isolation
 
-`mutate`. Parent spawns `cloud-operator` with area `results`.
+Standalone dispatch: Follow the destination's isolation and dispatch rules. Use a registered local operator or continue in-session when those rules permit; report a capability gap if no local path supports the work.
+
+`mutate`. In ai-router, the parent spawns `cloud-operator` with area `results`.
 
 ## How to use
 

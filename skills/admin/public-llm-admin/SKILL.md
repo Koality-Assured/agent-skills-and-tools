@@ -43,15 +43,17 @@ High: governs enterprise AI vendor privacy, compliance, and credential lifecycle
 
 ## Source of truth
 
-- [`docs/guidance/ai-platform-anthropic-claude.md`](../../../../docs/guidance/ai-platform-anthropic-claude.md)
-- [`docs/guidance/ai-platform-openai-chatgpt.md`](../../../../docs/guidance/ai-platform-openai-chatgpt.md)
-- [`docs/guidance/ai-platform-google-gemini.md`](../../../../docs/guidance/ai-platform-google-gemini.md)
-- [`docs/standards/ai-development-security.md`](../../../../docs/standards/ai-development-security.md)
+- `docs/guidance/ai-platform-anthropic-claude.md` (`../../../../docs/guidance/ai-platform-anthropic-claude.md`; ai-router-only, optional provenance)
+- `docs/guidance/ai-platform-openai-chatgpt.md` (`../../../../docs/guidance/ai-platform-openai-chatgpt.md`; ai-router-only, optional provenance)
+- `docs/guidance/ai-platform-google-gemini.md` (`../../../../docs/guidance/ai-platform-google-gemini.md`; ai-router-only, optional provenance)
+- `docs/standards/ai-development-security.md` (`../../../../docs/standards/ai-development-security.md`; ai-router-only, optional provenance)
 - `python scripts/llm/public_llm_admin.py`
 
 ## Isolation
 
-`mutate`. Parent spawns `public-llm-admin` with area `results`. Key rotation and workspace configuration operations require explicit human authorization in the current turn.
+Standalone dispatch: Follow the destination's isolation and dispatch rules. Use a registered local operator or continue in-session when those rules permit; report a capability gap if no local path supports the work.
+
+`mutate`. In ai-router, the parent spawns `public-llm-admin` with area `results`. Key rotation and workspace configuration operations require explicit human authorization in the current turn.
 
 ## How to use
 

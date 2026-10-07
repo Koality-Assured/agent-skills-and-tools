@@ -51,10 +51,10 @@ High. Outbound documentation published to organization-wide spaces represents au
 - CLI tool (single page): `scripts/confluence/confluence_ops.py`
 - CLI tool (IA sync & drift): `scripts/confluence/confluence_sync.py`
 - Oddities & drift test suite: `scripts/tests/test_confluence_oddities_and_drift.py`
-- Interaction standard: [`docs/standards/confluence-interaction-and-administration.md`](../../../../docs/standards/confluence-interaction-and-administration.md)
-- Synchronization & drift guide: [`docs/guidance/confluence-corpus-synchronization-and-drift.md`](../../../../docs/guidance/confluence-corpus-synchronization-and-drift.md)
-- Architecture patterns: [`supporting/confluence/confluence-patterns.md`](../../../../supporting/confluence/confluence-patterns.md)
-- ADF & Storage format guide: [`supporting/confluence/adf-and-storage-guide.md`](../../../../supporting/confluence/adf-and-storage-guide.md)
+- Interaction standard: `docs/standards/confluence-interaction-and-administration.md` (`../../../../docs/standards/confluence-interaction-and-administration.md`; ai-router-only, optional provenance)
+- Synchronization & drift guide: `docs/guidance/confluence-corpus-synchronization-and-drift.md` (`../../../../docs/guidance/confluence-corpus-synchronization-and-drift.md`; ai-router-only, optional provenance)
+- Architecture patterns: `supporting/confluence/confluence-patterns.md` (`../../../../supporting/confluence/confluence-patterns.md`; ai-router-only, optional provenance)
+- ADF & Storage format guide: `supporting/confluence/adf-and-storage-guide.md` (`../../../../supporting/confluence/adf-and-storage-guide.md`; ai-router-only, optional provenance)
 
 ## Isolation
 

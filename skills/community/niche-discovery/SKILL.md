@@ -41,14 +41,16 @@ High: Rapid innovation in AI and developer tooling often originates in indie and
 
 ## Source of truth
 
-- [`references/socials/community-reliability-rubric.md`](../../../../references/socials/community-reliability-rubric.md)
-- [`references/socials/catalogs/ranked-communities.json`](../../../../references/socials/catalogs/ranked-communities.json)
-- [`scripts/research/community_analyzer.py`](../../../../scripts/research/community_analyzer.py)
-- [`docs/standards/research-and-empirical-validation.md`](../../../../docs/standards/research-and-empirical-validation.md)
+- `references/socials/community-reliability-rubric.md` (`../../../../references/socials/community-reliability-rubric.md`; ai-router-only, optional provenance)
+- `references/socials/catalogs/ranked-communities.json` (`../../../../references/socials/catalogs/ranked-communities.json`; ai-router-only, optional provenance)
+- `scripts/research/community_analyzer.py` (`../../../../scripts/research/community_analyzer.py`; ai-router-only, optional provenance)
+- `docs/standards/research-and-empirical-validation.md` (`../../../../docs/standards/research-and-empirical-validation.md`; ai-router-only, optional provenance)
 
 ## Isolation
 
-`mutate`. Parent router isolates the session with `isolate-work` before spawning `community-analyst`. Discovery dossiers write under `results/research/community/niche-discovery/<domain>/<YYYY-MM-DD>/`.
+Standalone dispatch: Follow the destination's isolation and dispatch rules. Use a registered local operator or continue in-session when those rules permit; report a capability gap if no local path supports the work.
+
+`mutate`. In ai-router, the parent router isolates the session with `isolate-work` before spawning `community-analyst`. Discovery dossiers write under `results/research/community/niche-discovery/<domain>/<YYYY-MM-DD>/`.
 
 ## How to use
 
@@ -73,7 +75,7 @@ python scripts/ai-tooling/validate_skill.py --skill niche-discovery --dry-run
 
 Inherits Critical cost layers: qmd for discovery (no tree walks); ast-grep for structured files; Headroom for bulky tool output. Skills cannot waive root AGENTS.md.
 
-Follow [`docs/agent-session-security.md`](../../../../docs/agent-session-security.md). Niche repositories must be audited for supply-chain risk and malicious code before importing into production codebases.
+Follow the destination's root security rules (ai-router policy path is optional provenance). Niche repositories must be audited for supply-chain risk and malicious code before importing into production codebases.
 
 ## Completion gates
 
