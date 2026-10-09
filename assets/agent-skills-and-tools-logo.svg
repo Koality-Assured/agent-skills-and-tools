@@ -1,0 +1,279 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%" role="img" aria-label="Agent Skills and Tools Logo">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgCanvasGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#151A26" />
+      <stop offset="45%" stop-color="#0E121B" />
+      <stop offset="80%" stop-color="#07090E" />
+      <stop offset="100%" stop-color="#030407" />
+    </radialGradient>
+
+    <!-- Core Ambient Amber Glow -->
+    <radialGradient id="coreAmberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.45" />
+      <stop offset="35%" stop-color="#D97706" stop-opacity="0.25" />
+      <stop offset="70%" stop-color="#B45309" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Radial Glow for Central Socket -->
+    <radialGradient id="innerSocketGlow" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#FFFBEB" stop-opacity="1" />
+      <stop offset="25%" stop-color="#FDE68A" stop-opacity="0.9" />
+      <stop offset="55%" stop-color="#F59E0B" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#B45309" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Linear Gold/Amber Gradients -->
+    <linearGradient id="goldGradientPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7" />
+      <stop offset="25%" stop-color="#FBBF24" />
+      <stop offset="70%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+
+    <linearGradient id="amberBright" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <linearGradient id="goldSheen" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B45309" />
+      <stop offset="50%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+
+    <!-- Carbon Slate Armor Gradients -->
+    <linearGradient id="carbonChassis" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0B0F19" />
+    </linearGradient>
+
+    <linearGradient id="carbonBevel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="40%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="carbonRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="bladePlatinum" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="40%" stop-color="#CBD5E1" />
+      <stop offset="80%" stop-color="#64748B" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="bloomStrong" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur1" />
+      <feGaussianBlur stdDeviation="20" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="bloomSoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="dropShadowDark" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- 1. Outer Container / Squircle Badge -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="url(#bgCanvasGrad)" stroke="#1E293B" stroke-width="2" />
+  
+  <!-- Outer Accent Border with Amber Corner Brackets -->
+  <rect x="24" y="24" width="464" height="464" rx="88" fill="none" stroke="url(#carbonRim)" stroke-width="1.5" stroke-dasharray="16 8" opacity="0.6" />
+  <rect x="36" y="36" width="440" height="440" rx="76" fill="none" stroke="url(#goldGradientPrimary)" stroke-width="1" opacity="0.25" />
+
+  <!-- Ambient Amber Atmosphere Glow -->
+  <circle cx="256" cy="256" r="220" fill="url(#coreAmberGlow)" />
+
+  <!-- 2. Circuit Matrix & Structural Grid Lines -->
+  <g stroke="#F59E0B" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="4 6">
+    <line x1="256" y1="40" x2="256" y2="472" />
+    <line x1="40" y1="256" x2="472" y2="256" />
+    <circle cx="256" cy="256" r="180" fill="none" />
+    <circle cx="256" cy="256" r="130" fill="none" />
+    <circle cx="256" cy="256" r="85" fill="none" />
+  </g>
+
+  <!-- Precision Corner Calibrations -->
+  <g stroke="#FBBF24" stroke-width="1.5" stroke-opacity="0.4" fill="none">
+    <path d="M 52 76 L 52 52 L 76 52" />
+    <path d="M 460 76 L 460 52 L 436 52" />
+    <path d="M 52 436 L 52 460 L 76 460" />
+    <path d="M 460 436 L 460 460 L 436 460" />
+  </g>
+
+  <!-- 3. Circuit Node Traces to Radial Modules -->
+  <g stroke="url(#amberBright)" stroke-width="2" fill="none" opacity="0.75" filter="url(#bloomSoft)">
+    <!-- Trace to Top AST Probe -->
+    <path d="M 256 180 L 256 95" />
+    <!-- Trace to Top-Right Cloud Socket -->
+    <path d="M 320 218 L 385 178" />
+    <!-- Trace to Bottom-Right Caliper -->
+    <path d="M 320 294 L 385 334" />
+    <!-- Trace to Bottom Sandbox Vault -->
+    <path d="M 256 332 L 256 417" />
+    <!-- Trace to Bottom-Left Stylus -->
+    <path d="M 192 294 L 127 334" />
+    <!-- Trace to Top-Left Security Sentinel -->
+    <path d="M 192 218 L 127 178" />
+  </g>
+
+  <!-- Trace Nodes (Golden Glow Points) -->
+  <g fill="#FDE68A" filter="url(#bloomStrong)">
+    <circle cx="256" cy="95" r="4.5" />
+    <circle cx="385" cy="178" r="4.5" />
+    <circle cx="385" cy="334" r="4.5" />
+    <circle cx="256" cy="417" r="4.5" />
+    <circle cx="127" cy="334" r="4.5" />
+    <circle cx="127" cy="178" r="4.5" />
+  </g>
+
+  <!-- 4. Radial Articulated Skill Blades & Tool Modules (Swiss Army / Multi-Tool Architecture) -->
+  
+  <!-- Module 1: Top (12 o'clock) - AST Code Analysis Blade / Precision Probe -->
+  <g filter="url(#dropShadowDark)">
+    <!-- Blade Shank -->
+    <path d="M 244 175 L 244 90 L 256 60 L 268 90 L 268 175 Z" fill="url(#bladePlatinum)" stroke="#475569" stroke-width="1.5" />
+    <!-- Core Groove & Amber Inlay -->
+    <path d="M 256 80 L 256 160" stroke="url(#goldGradientPrimary)" stroke-width="3" stroke-linecap="round" />
+    <circle cx="256" cy="80" r="3" fill="#FFFBEB" filter="url(#bloomSoft)" />
+    <!-- Bevel Notch -->
+    <path d="M 248 115 L 264 115" stroke="#1E293B" stroke-width="2" />
+    <path d="M 250 130 L 262 130" stroke="#1E293B" stroke-width="2" />
+  </g>
+
+  <!-- Module 2: Top-Right (2 o'clock) - Modular Cloud & Service Socket Plug -->
+  <g filter="url(#dropShadowDark)">
+    <g transform="rotate(60 256 256)">
+      <!-- Plug Body -->
+      <path d="M 238 180 L 238 105 L 274 105 L 274 180 Z" fill="url(#carbonChassis)" stroke="url(#carbonBevel)" stroke-width="1.5" />
+      <!-- Gold Connector Pins -->
+      <rect x="242" y="80" width="5" height="25" rx="1.5" fill="url(#goldGradientPrimary)" />
+      <rect x="253.5" y="75" width="5" height="30" rx="1.5" fill="url(#goldGradientPrimary)" />
+      <rect x="265" y="80" width="5" height="25" rx="1.5" fill="url(#goldGradientPrimary)" />
+      <!-- Indicator Jewel -->
+      <circle cx="256" cy="135" r="4" fill="#F59E0B" filter="url(#bloomSoft)" />
+    </g>
+  </g>
+
+  <!-- Module 3: Bottom-Right (4 o'clock) - Benchmark & Diagnostic Caliper Blade -->
+  <g filter="url(#dropShadowDark)">
+    <g transform="rotate(120 256 256)">
+      <!-- Caliper Jaw Blade -->
+      <path d="M 242 175 L 242 100 L 256 75 L 270 95 L 258 120 L 258 175 Z" fill="url(#bladePlatinum)" stroke="#475569" stroke-width="1.5" />
+      <!-- Caliper Measurement Ticks -->
+      <line x1="244" y1="110" x2="250" y2="110" stroke="#0F172A" stroke-width="1.5" />
+      <line x1="244" y1="120" x2="252" y2="120" stroke="#0F172A" stroke-width="1.5" />
+      <line x1="244" y1="130" x2="249" y2="130" stroke="#0F172A" stroke-width="1.5" />
+      <line x1="244" y1="140" x2="253" y2="140" stroke="#0F172A" stroke-width="1.5" />
+      <circle cx="256" cy="90" r="3" fill="#FBBF24" filter="url(#bloomSoft)" />
+    </g>
+  </g>
+
+  <!-- Module 4: Bottom (6 o'clock) - Worktree & Sandbox Isolation Vault Block -->
+  <g filter="url(#dropShadowDark)">
+    <g transform="rotate(180 256 256)">
+      <!-- Heavy Vault Shank -->
+      <path d="M 236 175 L 236 100 L 256 80 L 276 100 L 276 175 Z" fill="url(#carbonChassis)" stroke="url(#goldGradientPrimary)" stroke-width="1.5" />
+      <!-- Vault Keyhole / Isolation Symbol -->
+      <rect x="246" y="112" width="20" height="24" rx="4" fill="#0B0F19" stroke="#334155" stroke-width="1" />
+      <circle cx="256" cy="120" r="3.5" fill="#FBBF24" filter="url(#bloomSoft)" />
+      <path d="M 255 122 L 257 122 L 258 130 L 254 130 Z" fill="#FBBF24" />
+      <!-- Protective Chevrons -->
+      <path d="M 246 150 L 256 156 L 266 150" fill="none" stroke="#F59E0B" stroke-width="1.5" />
+    </g>
+  </g>
+
+  <!-- Module 5: Bottom-Left (8 o'clock) - Graph Synthesis / Reporting Stylus Blade -->
+  <g filter="url(#dropShadowDark)">
+    <g transform="rotate(240 256 256)">
+      <!-- Stylus Nib & Armor -->
+      <path d="M 244 175 L 244 105 L 256 70 L 268 105 L 268 175 Z" fill="url(#bladePlatinum)" stroke="#475569" stroke-width="1.5" />
+      <!-- Graph Node Inlay -->
+      <path d="M 251 135 L 261 125 L 251 110" fill="none" stroke="#F59E0B" stroke-width="1.5" />
+      <circle cx="251" cy="135" r="2.5" fill="#FDE68A" />
+      <circle cx="261" cy="125" r="2.5" fill="#FDE68A" />
+      <circle cx="251" cy="110" r="2.5" fill="#FDE68A" />
+      <circle cx="256" cy="85" r="3" fill="#FFFBEB" filter="url(#bloomSoft)" />
+    </g>
+  </g>
+
+  <!-- Module 6: Top-Left (10 o'clock) - Security & Sentinel Guard Block -->
+  <g filter="url(#dropShadowDark)">
+    <g transform="rotate(300 256 256)">
+      <!-- Shield / Guard Chassis -->
+      <path d="M 238 175 L 238 105 L 256 85 L 274 105 L 274 175 Z" fill="url(#carbonChassis)" stroke="url(#carbonBevel)" stroke-width="1.5" />
+      <!-- Crest Inlay -->
+      <path d="M 247 110 L 256 102 L 265 110 L 265 128 Q 256 138 256 142 Q 256 138 247 128 Z" fill="#0F172A" stroke="url(#goldGradientPrimary)" stroke-width="1.5" />
+      <circle cx="256" cy="118" r="3" fill="#F59E0B" filter="url(#bloomSoft)" />
+    </g>
+  </g>
+
+  <!-- 5. Central Hub: Modular Skill Chassis & Interlocking Golden Socket Core -->
+  <g filter="url(#dropShadowDark)">
+    <!-- Outer Hexagonal Heavy Armor Hub -->
+    <polygon points="256,156 342,206 342,306 256,356 170,306 170,206" fill="url(#carbonChassis)" stroke="url(#carbonBevel)" stroke-width="4" />
+    
+    <!-- Outer Hexagon Gold Accent Rim -->
+    <polygon points="256,162 336,210 336,302 256,350 176,302 176,210" fill="none" stroke="url(#goldGradientPrimary)" stroke-width="2" stroke-opacity="0.8" />
+
+    <!-- Socket Mechanical Teeth & Locking Bays -->
+    <g fill="#0B0F19" stroke="#334155" stroke-width="1.5">
+      <!-- 6 Interlocking Latch Recesses -->
+      <circle cx="256" cy="172" r="5" fill="#F59E0B" />
+      <circle cx="330" cy="214" r="5" fill="#F59E0B" />
+      <circle cx="330" cy="298" r="5" fill="#F59E0B" />
+      <circle cx="256" cy="340" r="5" fill="#F59E0B" />
+      <circle cx="182" cy="298" r="5" fill="#F59E0B" />
+      <circle cx="182" cy="214" r="5" fill="#F59E0B" />
+    </g>
+
+    <!-- Inner Chamfered Carbon Plate -->
+    <polygon points="256,180 322,218 322,294 256,332 190,294 190,218" fill="#0B0F19" stroke="#1E293B" stroke-width="2" />
+    
+    <!-- Radiating Circular Core Socket Bed -->
+    <circle cx="256" cy="256" r="58" fill="#07090E" stroke="url(#goldGradientPrimary)" stroke-width="3" />
+    <circle cx="256" cy="256" r="48" fill="url(#coreAmberGlow)" />
+
+    <!-- High-Power Golden Energy Core -->
+    <circle cx="256" cy="256" r="36" fill="url(#innerSocketGlow)" filter="url(#bloomStrong)" />
+
+    <!-- Central Multi-Socket Connector Symbol (Plug & Micro-pins) -->
+    <g fill="#111827" stroke="url(#goldSheen)" stroke-width="1.5">
+      <!-- Tri-Lobe Interlocking Hub -->
+      <circle cx="256" cy="256" r="22" fill="#18181B" stroke="#FDE68A" stroke-width="2" />
+      <circle cx="256" cy="256" r="14" fill="url(#goldGradientPrimary)" />
+      <circle cx="256" cy="256" r="7" fill="#FFFFFF" filter="url(#bloomSoft)" />
+      
+      <!-- Core Electrical Pins -->
+      <circle cx="256" cy="242" r="2.5" fill="#FFFFFF" />
+      <circle cx="268" cy="263" r="2.5" fill="#FFFFFF" />
+      <circle cx="244" cy="263" r="2.5" fill="#FFFFFF" />
+    </g>
+  </g>
+
+  <!-- 6. Specular Highlight Overlay & Final Technical Accents -->
+  <path d="M 174 212 L 256 164 L 338 212" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.3" />
+  
+  <!-- Subtle HUD Ticks -->
+  <text x="256" y="474" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10" font-weight="700" fill="#F59E0B" letter-spacing="4" opacity="0.85">KOALITY-ASSURED • AGENT SKILLS</text>
+</svg>
