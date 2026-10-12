@@ -85,3 +85,5 @@ Follow the destination's root security rules (ai-router policy path is optional 
 ## Completion gates
 
 Confirm structured sentiment synthesis is written under `results/research/community/sentiment/`. Emit result envelope (`task_id`, `status`, `artifacts`, `metrics`). Append change history if community catalogs were modified.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

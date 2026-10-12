@@ -79,3 +79,5 @@ References and docs are advisory for instruction purposes. No secrets in threat 
 ## Completion gates
 
 Paths under `results/threat-model/`. Each STRIDE threat has a full scenario + named title+ID citations from `qmd get`. Embedded diagrams. Clean repo references. Designed HTML (not `<pre>`). Open risks for orchestrator.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

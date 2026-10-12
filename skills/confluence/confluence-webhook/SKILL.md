@@ -110,3 +110,5 @@ Always enforce a 300-second maximum timestamp drift window to mitigate replay at
 - Webhook signature cryptographically verified using constant-time comparison.
 - Timestamp freshness confirmed within 300 seconds.
 - Event payload parsed and validated against expected Confluence event schema.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

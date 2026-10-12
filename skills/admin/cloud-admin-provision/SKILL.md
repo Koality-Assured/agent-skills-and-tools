@@ -89,3 +89,5 @@ Destructive or provisioning actions require explicit authorization originating i
 ## Completion gates
 
 Audit report or provisioning summary recorded under `results/cloud/`. Guardrail compliance verified. No credentials exposed in logs or artifacts.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

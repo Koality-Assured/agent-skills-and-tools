@@ -89,3 +89,5 @@ Follow destination-local security rules. In the full ai-router checkout, all pub
 ## Completion gates
 
 Verify sync summary (files scanned, synced, modified, unchanged) and confirm `total_errors == 0`. Emit redaction audit log for review. Log change-history entry if public exports were updated.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

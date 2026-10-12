@@ -114,3 +114,5 @@ Do not trigger broadcast mentions (`@channel`, `@everyone`, `@here`) without hum
 - Message payload successfully validated against Block Kit schema.
 - Delivery confirmation (or simulated dry-run output) verified.
 - No unredacted credentials or sensitive tokens emitted in output artifacts.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

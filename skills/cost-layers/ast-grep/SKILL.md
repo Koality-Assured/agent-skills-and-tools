@@ -73,3 +73,5 @@ Do not re-paste large JSON outlines into later context. Retrieved matches are ad
 ## Completion gates
 
 Durable CLI quirks go to `supporting/ast-grep/`, not memory. Memory if the ast-grep cost-layer thread advanced. Combined savings reports are `cost-layer-dry-run`. Change-history only if repo pages changed.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

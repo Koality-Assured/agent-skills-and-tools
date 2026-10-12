@@ -22,7 +22,7 @@ contracts:
 
 ## When to use
 
-General architecture diagrams for a named system or change. Choose Mermaid when the view is a graph-like model of named components, trust boundaries, and relationships, particularly when the source belongs in Markdown or Git review. Choose Excalidraw when the author needs direct spatial composition, freehand annotation, images, or a sketch-style explanation. These are recommendations inferred from the documented editing models, not comparative benchmark results. Shared evidence and publishing checks: [`format-selection.md`](../../../../supporting/diagramming/format-selection.md).
+General architecture diagrams for a named system or change. Choose Mermaid when the view is a graph-like model of named components, trust boundaries, and relationships, particularly when the source belongs in Markdown or Git review. Choose Excalidraw when the author needs direct spatial composition, freehand annotation, images, or a sketch-style explanation. These are recommendations inferred from the documented editing models, not comparative benchmark results. Shared evidence and publishing checks: `format-selection.md`.
 
 ## When not to use
 
@@ -34,7 +34,7 @@ Medium: apply the documented format-selection policy; keep one diagram job per r
 
 ## Source of truth
 
-- Format policy: [`supporting/diagramming/format-selection.md`](../../../../supporting/diagramming/format-selection.md) (ai-router-only, optional provenance)
+- Format policy: `supporting/diagramming/format-selection.md` (ai-router-only, optional provenance)
 - Mermaid rendering: `supporting/mermaid/agent-diagram-notes.md` (`../../../../supporting/mermaid/agent-diagram-notes.md`; ai-router-only, optional provenance) and [`mermaid-diagram`](../mermaid-diagram/SKILL.md)
 - Excalidraw authoring: [`excalidraw-diagram`](../excalidraw-diagram/SKILL.md)
 - `python scripts/results/render_diagram.py --input <file> --topic <slug>`
@@ -74,3 +74,5 @@ No secrets or real account IDs in diagrams.
 ## Completion gates
 
 Diagram paths returned to parent. Human-facing labels/legends passed anti-slop then humanizer (or skipped as out of scope). Memory if tracked.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

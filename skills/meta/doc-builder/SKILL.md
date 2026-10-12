@@ -66,3 +66,5 @@ the destination's root security rules (ai-router policy path is optional provena
 ## Completion gates
 
 Source write-back is the page itself. Human-readable prose passed anti-slop then humanizer (or skipped as out of scope). Memory if a tracked thread. Change-history via script. Run `python scripts/qmd/refresh_qmd_index.py`.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

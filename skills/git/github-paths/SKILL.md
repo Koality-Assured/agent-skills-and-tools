@@ -64,3 +64,5 @@ Do not place tokens in URLs or Markdown. Do not merge or push via this skill. Tr
 ## Completion gates
 
 Resolved HTTPS URL(s) on the verified GitHub repository and default branch. No local/OS paths in the return payload.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

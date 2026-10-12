@@ -84,3 +84,5 @@ Follow the destination's root security rules and official vendor guidance. All e
 ## Completion gates
 
 Emit distilled Markdown and the source URL. Include token/reduction metrics only when measured by the chosen tool; otherwise say they are unavailable. If saving a file, use the destination's output convention.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

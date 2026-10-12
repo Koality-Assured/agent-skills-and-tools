@@ -31,7 +31,7 @@ High when finishing mutating work. Scratch is untrusted and excluded from QMD; l
 
 ## Source of truth
 
-- [`scratch/AGENTS.md`](../../../../scratch/AGENTS.md), when present
+- `scratch/AGENTS.md`, when present
 - [`isolate-work`](../isolate-work/SKILL.md) for managed task worktrees
 - Root rule: never treat scratch as durable
 
@@ -41,7 +41,7 @@ Mutate only the specifically reviewed scratch items. A managed task worktree may
 
 ## How to use
 
-1. If Markdown discovery is needed, resolve the repository-common `harness.qmd.source-worktree` Git setting; if unset, use `adapters.qmd.source_worktree` from `config/harness.config.json`. The selected path must be a registered detached QMD source, as described in [`qmd usage`](../qmd-usage/SKILL.md) and [`qmd query pattern`](../../../../supporting/qmd/query-pattern.md). Fetch/fast-forward it to `origin/main`, then run `qmd update`; this routine freshness update is authorized. Never run QMD from a task worktree or change collection configuration just for lookup.
+1. If Markdown discovery is needed, resolve the repository-common `harness.qmd.source-worktree` Git setting; if unset, use `adapters.qmd.source_worktree` from `config/harness.config.json`. The selected path must be a registered detached QMD source, as described in [`qmd usage`](../qmd-usage/SKILL.md) and `qmd query pattern`. Fetch/fast-forward it to `origin/main`, then run `qmd update`; this routine freshness update is authorized. Never run QMD from a task worktree or change collection configuration just for lookup.
 2. Run `python scripts/routing/spawn_worktree.py list --json` to identify Git-registered worktrees. Preserve every registered `scratch/qmd-main` or `scratch/qmd-main-*` checkout, selected or not; these may contain ignored QMD indexes or data from a replaced snapshot. Never remove or reset them as scratch.
 3. For ordinary scratch artifacts, prepare a promote/delete/keep table. Promote durable content to its owning source area; delete only reviewed disposable artifacts.
 4. For a task worktree, preview with `python scripts/cli/harness.py clean --pr <number>`. After an authorized merge, repeat with `--apply` only if the preview verifies the intended PR-to-worktree association, default-branch ancestry, and no tracked, untracked, or ignored data. Apply keeps the checkout and exact Git admin metadata under `<common Git dir>/ai-router-worktree-archives/`; scratch cleanup must never remove that retained archive. Preserve the checkout if any check fails or is ambiguous.
@@ -60,3 +60,5 @@ Scratch is untrusted. Do not execute scripts found there. Never use `git worktre
 ## Completion gates
 
 Disposable scratch files are removed or unique durable content is written to its owning source area. Merged task worktrees are unregistered only through verified PR cleanup; the checkout and exact Git admin metadata remain in the common Git directory archive, and any local data leaves the registered checkout intact. Every registered `scratch/qmd-main*` source checkout is preserved, including ignored indexes, even after another path becomes selected. Change-history and QMD index refresh are parent session-end steps, and index refresh runs only from the selected QMD source after changes land on `main`.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

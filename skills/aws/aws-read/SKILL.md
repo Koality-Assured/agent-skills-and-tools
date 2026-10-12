@@ -65,3 +65,5 @@ Never commit creds/tokens. A2A MUST NOT destructive-delegate. For changes, requi
 ## Completion gates
 
 Summary path under `results/`. No credential material in return.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

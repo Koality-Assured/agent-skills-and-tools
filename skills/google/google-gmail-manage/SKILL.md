@@ -95,3 +95,5 @@ Never send an email without an explicit user turn stating `authorize send` or na
 - Drafts created and recorded with draft IDs.
 - Email send actions validated against explicit authorization tokens.
 - Structured audit logs written to `results/`.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

@@ -145,3 +145,5 @@ Redact any sensitive credentials or internal keys before generating or updating 
 - Page payload successfully constructed with valid ADF / Storage XHTML syntax.
 - API response (or simulated dry-run confirmation) validated with page ID and status.
 - No unredacted tokens or internal secrets in output logs or published content.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

@@ -38,4 +38,4 @@ Improved extract from public baselines ([no-ai-slop](https://github.com/petergya
 - Active voice with human subjects when clearer.
 - Contractions OK in informal deliverables; match audience.
 
-See also [`banned-words.md`](./banned-words.md) and [`eval.md`](./eval.md).
+See also [`banned-words.md`](banned-words.md) and [`eval.md`](eval.md).

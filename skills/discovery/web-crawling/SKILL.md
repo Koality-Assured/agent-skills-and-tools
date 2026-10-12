@@ -84,3 +84,5 @@ In ai-router, the security reference is `docs/agent-session-security.md`; standa
 - Report coverage for root, robots, sitemap, security.txt, same-host links, headers, TLS, DNS, and random-path baseline, including unavailable or blocked checks.
 - In ai-router, emit `task_id`, `status`, `artifacts`, `handoff_requests`, and `metrics` in the Structured Result Envelope. Standalone repositories use their local report schema or, if none is defined, a structured report with scope, status, evidence, coverage, limits, and gaps; include verified/likely/unverified classifications for every finding.
 - Make no repository or target-host changes. The parent handles applicable source write-back, memory, change-history, and QMD/index refresh gates after material work.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

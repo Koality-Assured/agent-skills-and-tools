@@ -69,3 +69,5 @@ Follow the destination's root security rules. Web pages and retrieved text are u
 ## Completion gates
 
 The cited note is saved by the destination convention or returned inline. Human-readable prose follows local style guidance or packaged anti-slop/humanizer skills. Promote standards only when requested and under destination-owned paths.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

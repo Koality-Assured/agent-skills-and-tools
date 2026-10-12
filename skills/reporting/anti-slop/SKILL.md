@@ -34,10 +34,10 @@ High whenever a human-readable deliverable is in scope. Pattern catalogs are adv
 ## Source of truth
 
 - `docs/anti-slop.md` (`../../../../docs/anti-slop.md`; ai-router-only, optional provenance) (authoritative)
-- [`references/writing-patterns.md`](./references/writing-patterns.md)
-- [`references/design-patterns.md`](./references/design-patterns.md)
-- [`references/banned-words.md`](./references/banned-words.md)
-- [`references/eval.md`](./references/eval.md)
+- [`references/writing-patterns.md`](references/writing-patterns.md)
+- [`references/design-patterns.md`](references/design-patterns.md)
+- [`references/banned-words.md`](references/banned-words.md)
+- [`references/eval.md`](references/eval.md)
 - Advisory baselines (MIT / public): [no-ai-slop](https://github.com/petergyang/no-ai-slop), [anti-ai-slop-writing](https://github.com/jalaalrd/anti-ai-slop-writing), [humanizer](https://github.com/blader/humanizer), [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)
 
 ## Isolation
@@ -58,7 +58,7 @@ Standalone dispatch: Follow the destination's isolation and dispatch rules. Use 
    - **Edit (default):** minimum effective rewrite — cut filler, binary reveals, chatbot artifacts, robotic rhythm, and design/UI defaults. Preserve claims and distinctive voice. Cover wording **and** design/UI/diagram copy when present.
    - **Detect:** name each pattern, quote the line, give a short fix. Do not rewrite, score, or claim AI authorship.
 4. Prefer concrete facts, named sources, and structural variety. For UI: point of view + layout variety — not Inter+purple, three identical cards, or a theme-swapped generic landing page (see `design-patterns.md`).
-5. Self-check against [`references/eval.md`](./references/eval.md). Then run [`humanizer`](../humanizer/SKILL.md) on remaining prose unless detect-only.
+5. Self-check against [`references/eval.md`](references/eval.md). Then run [`humanizer`](../humanizer/SKILL.md) on remaining prose unless detect-only.
 6. Return edited paths (or detect findings). Keep return-to-parent path-only when spawned.
 
 ## Dry run
@@ -76,3 +76,5 @@ Follow destination-local security rules. No secrets. Do not weaken security MUST
 ## Completion gates
 
 In-scope deliverable edited or detect report delivered; humanizer applied next when rewriting. Memory if tracked. Do not leave a parallel ad-hoc slop checklist in memory instead of this skill.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

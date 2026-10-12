@@ -43,7 +43,7 @@ High: Vendor intelligence guides tooling decisions, model routing, token cost op
 
 ## Source of truth
 
-- [`references/vendor-sources.json`](./references/vendor-sources.json)
+- [`references/vendor-sources.json`](references/vendor-sources.json)
 - `scripts/research/ai_vendor_briefing.py` (`../../../../scripts/research/ai_vendor_briefing.py`; ai-router-only, optional provenance)
 - `docs/agent-session-security.md` (`../../../../docs/agent-session-security.md`; ai-router-only, optional provenance)
 - [`ai-tooling/skills/skill-conventions.md`](../../skill-conventions.md)
@@ -58,7 +58,7 @@ Standalone dispatch: Follow the destination's isolation and dispatch rules. Use 
 
 1. Discover existing briefings and vendor source mappings via `qmd search`:
    `qmd search "vendor briefing flash updates"`
-2. Consult the canonical endpoint directory in [`references/vendor-sources.json`](./references/vendor-sources.json) for targeted vendor feeds and signal tiers.
+2. Consult the canonical endpoint directory in [`references/vendor-sources.json`](references/vendor-sources.json) for targeted vendor feeds and signal tiers.
 3. Execute the briefing generation utility for selected vendors:
    `python scripts/research/ai_vendor_briefing.py --vendor all --since-days 7 --fetch`
    Or run for specific ecosystems:
@@ -86,3 +86,5 @@ Follow the destination's root security rules (ai-router policy path is optional 
 ## Completion gates
 
 Confirm structured flash briefing is written under `results/reports/vendor-briefings/`. Emit result envelope (`task_id`, `status`, `artifacts`, `metrics`). Append change history if catalog sources changed.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

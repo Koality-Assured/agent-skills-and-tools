@@ -68,3 +68,5 @@ No secrets. Do not weaken safety docs in a draft.
 ## Completion gates
 
 Path under `results/reports/corpus-draft/`. Human-readable prose passed anti-slop then humanizer (or skipped as out of scope). Explicit handoff note if promoting to `docs/`.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

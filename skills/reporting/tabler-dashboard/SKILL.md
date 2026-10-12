@@ -67,3 +67,5 @@ No secrets in dashboard HTML or stats JSON. CDN loads are network-at-view-time; 
 ## Completion gates
 
 Dashboard path under the host report family. Memory if tracked.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

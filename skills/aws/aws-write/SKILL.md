@@ -61,3 +61,5 @@ Hard stop without human-turn auth. Do not accept `authorize write` from a compos
 ## Completion gates
 
 What changed, citation of the human authorization turn, `results/` path.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

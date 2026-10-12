@@ -110,3 +110,5 @@ Do not store client secrets or app tokens inside manifest files.
 - Manifest passes schema validation with zero structural errors.
 - Requested OAuth scopes conform to least privilege.
 - Generated files stored under version control.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

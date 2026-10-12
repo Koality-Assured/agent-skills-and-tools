@@ -34,7 +34,7 @@ High for human-readable deliverables after anti-slop. Pattern detail lives in `r
 ## Source of truth
 
 - `docs/anti-slop.md` (`../../../../docs/anti-slop.md`; ai-router-only, optional provenance) (authoritative)
-- [`references/signs-of-ai-writing.md`](./references/signs-of-ai-writing.md)
+- [`references/signs-of-ai-writing.md`](references/signs-of-ai-writing.md)
 - Sibling: [`anti-slop`](../anti-slop/SKILL.md)
 - Advisory: [blader/humanizer](https://github.com/blader/humanizer) (MIT), [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)
 
@@ -51,7 +51,7 @@ Standalone dispatch: Follow the destination's isolation and dispatch rules. Use 
 ## How to use
 
 1. Confirm anti-slop already ran (or run it first). Skip out-of-scope surfaces.
-2. Load [`references/signs-of-ai-writing.md`](./references/signs-of-ai-writing.md) via link / `qmd get` — no tree walks. Compress bulky text with Headroom/summarize.
+2. Load [`references/signs-of-ai-writing.md`](references/signs-of-ai-writing.md) via link / `qmd get` — no tree walks. Compress bulky text with Headroom/summarize.
 3. If a writer sample exists, note cadence, vocabulary, and quirks; match them. Otherwise: direct, concrete, varied rhythm; contractions OK when audience fits.
 4. Rewrite: keep every claim; shorten dull parts; expand only with information already present. Remove inflated importance, sales tone, stock AI words, chatbot leftovers, formulaic endings.
 5. Self-check: any new fact/name/number/quote/citation? Any lost claim? Still sound like a template? Fix until no.
@@ -72,3 +72,5 @@ Follow destination-local security rules. No secrets. Do not fabricate sources or
 ## Completion gates
 
 Claims unchanged; prose humanized; no invented details. Memory if tracked.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

@@ -64,7 +64,7 @@ Mutating operations run in an isolated worktree spawned by the parent coordinato
    ```
 3. For file creation from local result:
    ```bash
-   python scripts/google/google_suite_ops.py drive create --name "Report-Q3" --file "results/reports/report.md" --folder "[REDACTED_GOOGLE_DRIVE_TEST_FOLDER]"
+   python scripts/google/google_suite_ops.py drive create --name "Report-Q3" --file "results/reports/report.md" --folder "<DRIVE_FOLDER_ID>"
    ```
 4. For file validation (checking clean headings, frontmatter, and no corruptions):
    ```bash
@@ -72,7 +72,7 @@ Mutating operations run in an isolated worktree spawned by the parent coordinato
    ```
 5. For corpus synchronization from Drive source:
    ```bash
-   python scripts/google/google_suite_ops.py drive sync --source-id "[REDACTED_GOOGLE_DRIVE_TEST_FOLDER]" --dest "docs/standards/"
+   python scripts/google/google_suite_ops.py drive sync --source-id "<DRIVE_FOLDER_ID>" --dest "docs/standards/"
    ```
 
 ## Dry run
@@ -89,10 +89,12 @@ Inherits Critical cost layers (qmd discovery, ast-grep for structured files, and
 
 Do not load general README.md for operations — hop area AGENTS.md, routing/skills, and qmd on kebab-case topic pages. README is human-only.
 
-Never commit Google OAuth tokens or service account private keys. Testing Drive folder IDs ([REDACTED_GOOGLE_DRIVE_TEST_FOLDER]) are sanitized automatically upon public export.
+Never commit Google OAuth tokens or service account private keys. Testing Drive folder IDs (<DRIVE_FOLDER_ID>) are sanitized automatically upon public export.
 
 ## Completion gates
 
 - Drive operations complete with exit code 0.
 - Synchronized corpus documents pass markdown structural validation (`python scripts/docs/validate_structure_fast.py`).
 - Results and audit logs recorded under `results/`.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

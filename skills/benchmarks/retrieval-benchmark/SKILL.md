@@ -72,3 +72,5 @@ Ground-truth query fixtures must not contain sensitive query tokens or productio
 ## Completion gates
 
 Retrieval benchmark output saved to `results/benchmarks/retrieval/<YYYY-MM-DD>/`. Precision@1 and MRR meet or exceed baseline targets.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

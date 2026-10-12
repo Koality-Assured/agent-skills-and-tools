@@ -80,3 +80,5 @@ Follow the destination's root security rules (ai-router policy path is optional 
 ## Completion gates
 
 Confirm structured product opportunity dossier is written under `results/research/community/product-opportunities/`. Emit result envelope (`task_id`, `status`, `artifacts`, `metrics`).
+
+> **Note:** This skill requires companion tooling not included in this catalog.

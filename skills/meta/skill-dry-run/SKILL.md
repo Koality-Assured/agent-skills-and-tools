@@ -65,3 +65,5 @@ Do not execute a skill's **How to use** mutating steps under the guise of a dry 
 ## Completion gates
 
 No change-history for a clean dry run. In ai-router, hand a failed template check to `skill-builder`. Standalone repositories follow local skill-authoring and validation rules or report a capability gap. Memory only if a tracked thread was about the skill.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

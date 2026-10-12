@@ -81,3 +81,5 @@ Follow the destination's root security rules (ai-router policy path is optional 
 ## Completion gates
 
 Confirm structured troubleshooting triage is written under `results/research/community/troubleshooting/`. Emit result envelope (`task_id`, `status`, `artifacts`, `metrics`).
+
+> **Note:** This skill requires companion tooling not included in this catalog.

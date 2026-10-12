@@ -98,3 +98,5 @@ A2A MUST NOT apply or deploy changes to real clouds. Never hardcode credentials,
 ## Completion gates
 
 Validated module directory containing `main.tf`, `variables.tf`, `outputs.tf`, `versions.tf`, and `README.md`. `terraform fmt -check` and `terraform validate` must pass cleanly with zero errors. Confirm nothing was applied to live clouds.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

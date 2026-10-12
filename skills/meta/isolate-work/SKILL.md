@@ -35,8 +35,8 @@ Critical: each mutating task needs its own checkout and branch. Worktree isolati
 
 - This skill (procedure)
 - ai-router CLI: `python scripts/routing/spawn_worktree.py -h`
-- Task lifecycle and PR checks: [`routing/by-task.md`](../../../../routing/by-task.md)
-- QMD retrieval location: [`qmd query pattern`](../../../../supporting/qmd/query-pattern.md)
+- Task lifecycle and PR checks: `routing/by-task.md`
+- QMD retrieval location: `qmd query pattern`
 - Standalone repositories follow their own root instructions.
 
 ## Isolation
@@ -47,7 +47,7 @@ The parent gives the returned path and branch to the specialist. All task edits 
 
 ## How to use
 
-1. For Markdown discovery, use the persistent detached QMD source at `scratch/qmd-main` (or its registered unique-suffix replacement), following [`qmd query pattern`](../../../../supporting/qmd/query-pattern.md). Fetch and safely fast-forward it to `origin/main`, then run `qmd update` and every `qmd search`, `qmd get`, or `qmd query` there. Freshness updates are authorized; collection configuration changes remain separate. Never retrieve from a task worktree or fall back to its index.
+1. For Markdown discovery, use the persistent detached QMD source at `scratch/qmd-main` (or its registered unique-suffix replacement), following `qmd query pattern`. Fetch and safely fast-forward it to `origin/main`, then run `qmd update` and every `qmd search`, `qmd get`, or `qmd query` there. Freshness updates are authorized; collection configuration changes remain separate. Never retrieve from a task worktree or fall back to its index.
 2. Create one task checkout: `python scripts/routing/spawn_worktree.py create --slug <kebab-task> --json`. Give the specialist its printed `path` and `branch`; do not start edits in the primary checkout.
 3. Use `harness pr` to create the pull request. Keep `harness pr` as PR creation only; merge through the standard `gh pr merge` route.
 4. After an authorized `gh pr merge` succeeds, run `python scripts/cli/harness.py clean --pr <number>` from the primary checkout to preview. Repeat with `--apply` only when the preview identifies the intended PR and worktree and every check passes. If a PR merged outside this session, preview it next time; apply only when merge authorization is established and all checks pass.
@@ -70,3 +70,5 @@ Treat every worktree file as user data. Cleanup previews by default. After PR an
 ## Completion gates
 
 After an authorized merge succeeds, preview cleanup immediately and apply only when every verification passes. If preview reports tracked, untracked, or ignored data, report each path and preserve the checkout. Write durable changes to their owning source areas; change-history and index refresh are parent session-end steps. Refresh from the persistent detached QMD source at `scratch/qmd-main` after changes land on `main`.
+
+> **Note:** This skill requires companion tooling not included in this catalog.
