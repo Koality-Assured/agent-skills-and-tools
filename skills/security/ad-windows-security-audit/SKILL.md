@@ -97,3 +97,5 @@ Inherits Critical cost layers in ai-router (qmd discovery; ast-grep for structur
 - Every finding links to collected evidence and a named control/rule, with severity, confidence, affected scope, and a remediation recommendation; unknowns remain explicit.
 - No target or remote state changed, and no prohibited secret material is present in the snapshot or report.
 - In ai-router, the paired fixture evaluators remain under `scripts/windows-security/`; this skill change creates no evaluator scripts. Standalone repositories use destination-provided evaluators and follow their root instructions for session-end work.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

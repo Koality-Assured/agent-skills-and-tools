@@ -70,3 +70,5 @@ Simulated dry runs execute locally without spawning live billable API calls or i
 ## Completion gates
 
 Fleet dry-run report written to `results/benchmarks/fleet/<YYYY-MM-DD>/`. Zero failed assertions on agent contracts, prompt prefix stability, or token ceilings.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

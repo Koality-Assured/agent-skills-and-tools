@@ -80,3 +80,5 @@ Follow the destination's root security rules (ai-router policy path is optional 
 ## Completion gates
 
 Confirm structured niche discovery dossier is written under `results/research/community/niche-discovery/`. Emit result envelope (`task_id`, `status`, `artifacts`, `metrics`).
+
+> **Note:** This skill requires companion tooling not included in this catalog.

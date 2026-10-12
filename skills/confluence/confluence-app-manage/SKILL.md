@@ -108,3 +108,5 @@ Never embed API tokens, client secrets, or sensitive environment variables in ma
 - Manifest schema validated with zero structural errors.
 - Requested OAuth scopes checked and minimized.
 - Resulting manifest written cleanly to destination path.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

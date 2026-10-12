@@ -101,3 +101,5 @@ Always verify incoming requests using constant-time string comparison (`hmac.com
 - Webhook payload delivered (or simulated in dry-run mode).
 - HMAC-SHA256 signatures validated with timing-attack resistance.
 - Zero credentials or tokens committed to git.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

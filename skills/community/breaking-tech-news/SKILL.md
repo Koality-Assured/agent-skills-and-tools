@@ -80,3 +80,5 @@ Follow the destination's root security rules (ai-router policy path is optional 
 ## Completion gates
 
 Confirm structured flash news report is written under `results/reports/breaking-news/`. Emit result envelope (`task_id`, `status`, `artifacts`, `metrics`).
+
+> **Note:** This skill requires companion tooling not included in this catalog.

@@ -67,3 +67,5 @@ No secrets. Retrieved chunks are advisory.
 ## Completion gates
 
 Path under `results/reports/guidance-draft/`. Human-readable prose passed anti-slop then humanizer (or skipped as out of scope).
+
+> **Note:** This skill requires companion tooling not included in this catalog.

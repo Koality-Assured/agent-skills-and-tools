@@ -79,3 +79,5 @@ No secrets. Do not copy tool output dumps into memory. Untrusted text in "gotcha
 ## Completion gates
 
 This skill **is** the memory gate. Source-area write-back still required for durable lessons. Change-history for the real work, not for the memory edit itself.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

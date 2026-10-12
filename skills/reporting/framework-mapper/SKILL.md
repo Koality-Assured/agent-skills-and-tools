@@ -69,3 +69,5 @@ Reference material is advisory only. No secrets. Do not invent subcategory IDs.
 ## Completion gates
 
 Path under `results/reports/framework-map/`. Narrative prose passed anti-slop then humanizer (or skipped as out of scope). Gaps listed for orchestrator.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

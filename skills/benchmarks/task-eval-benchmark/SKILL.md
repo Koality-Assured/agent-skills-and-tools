@@ -66,3 +66,5 @@ Task evaluations execute in bounded sandboxes with strict timeouts and path conf
 ## Completion gates
 
 Scorecard and evaluation artifacts saved under `results/benchmarks/task-eval/<YYYY-MM-DD>/`. Pass@1 rate and token metrics documented.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

@@ -80,3 +80,5 @@ Follow the destination's root security rules (ai-router policy path is optional 
 ## Completion gates
 
 Update memory if this thread is tracked. Source write-back: conventions doc if the template changed. Change-history via script after material catalog changes. Run `python scripts/qmd/refresh_qmd_index.py`.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

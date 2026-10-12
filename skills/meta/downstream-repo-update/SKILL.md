@@ -101,3 +101,5 @@ Follow destination-local security rules. In the full ai-router checkout, all pub
 ## Completion gates
 
 Verify publish summary table and confirm all repositories are clean and up to date with remote `origin/main`. Record change-history entry if material public exports were updated.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

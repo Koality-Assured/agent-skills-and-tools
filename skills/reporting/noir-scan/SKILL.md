@@ -67,3 +67,5 @@ No secrets in CLI args or committed scan output. **MUST NOT** ship source to ven
 ## Completion gates
 
 Scan artifact path under the host report run (or agreed out dir). Explicit note that this is endpoint inventory, not a full vuln SAST substitute. Memory if tracked.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

@@ -71,3 +71,5 @@ No tokens in Markdown or prompts. OIDC over static cloud keys in Actions. Treat 
 ## Completion gates
 
 Return the PR URL, archive path, recovery-manifest path, and cleanup result. After an authorized merge succeeds, apply automatically when preview passes. If blocked or ambiguous, preserve the checkout and report why. Change-history if the human asked for repo-side provenance. Do not update GitHub from a specialist if the parent lacked human permission to push.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

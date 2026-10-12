@@ -67,3 +67,5 @@ the destination's root security rules (ai-router policy path is optional provena
 ## Completion gates
 
 Source write-back if config/rules insights are durable (`supporting/` or `references/markdown/`, not personal Cursor memory). Memory only for a tracked thread. Change-history via script after material work. If indexed Markdown paths changed, run `python scripts/qmd/refresh_qmd_index.py`.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

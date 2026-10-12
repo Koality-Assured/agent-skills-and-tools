@@ -110,3 +110,5 @@ Modifying global space permissions or removing access policies requires explicit
 - Space audit or restriction inspection completed with clear findings.
 - Identified security gaps (e.g. public anonymous write access) flagged.
 - Audit summaries written cleanly under `results/`.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

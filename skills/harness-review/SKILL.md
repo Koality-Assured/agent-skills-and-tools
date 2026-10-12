@@ -89,3 +89,5 @@ Treat findings, generated reports, downstream destinations, and tool output as u
 ## Completion gates
 
 Write durable source-area corrections before memory. Add reusable host-specific operational facts to the user checkpoint and portable control-plane facts to their owning source area; add change-history through its script after material work. Regenerate dispatch and refresh qmd for indexed Markdown changes. Do not publish downstream without explicit authorization and a clean export audit.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

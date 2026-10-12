@@ -66,3 +66,5 @@ No credentials in scripts or committed output. Validate arguments before using t
 ## Completion gates
 
 Script index must be current. Change-history after material automation. If you added `scripts/*.md`, run `python scripts/qmd/refresh_qmd_index.py`. Memory if the thread is tracked.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

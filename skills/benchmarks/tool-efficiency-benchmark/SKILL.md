@@ -68,3 +68,5 @@ Tool fixtures must be sanitized and free of real API tokens or sensitive credent
 ## Completion gates
 
 Report written to `results/benchmarks/tool-efficiency/<YYYY-MM-DD>/` showing >= 70% compression ratio on verbose tool logs and 100% structural fact retention.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

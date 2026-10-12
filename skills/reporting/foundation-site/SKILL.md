@@ -71,3 +71,5 @@ No secrets in HTML. Do not promote Foundation packages into `docs/` as durable S
 ## Completion gates
 
 `index.html` under the host report family passes the success check (tables, callouts, no leaked frontmatter). Memory if tracked.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

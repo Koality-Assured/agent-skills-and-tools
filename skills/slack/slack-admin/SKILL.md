@@ -100,3 +100,5 @@ Never store or commit Slack admin tokens (`xoxp-`, `xoxb-`). All audit results m
 - Security audit executes and produces a structured findings report.
 - Report artifacts saved to `results/`.
 - No sensitive user tokens or unredacted secrets emitted.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

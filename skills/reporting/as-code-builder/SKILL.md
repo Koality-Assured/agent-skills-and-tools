@@ -66,3 +66,5 @@ A2A MUST NOT apply/deploy. No credentials in repo or prompts.
 ## Completion gates
 
 Path under `results/as-code/<type>/<topic>/<date>/`. Confirm nothing was applied.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

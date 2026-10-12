@@ -111,3 +111,5 @@ the destination's root security rules (ai-router policy path is optional provena
 ## Completion gates
 
 `README.md` updated and validated. Relative links verified. If indexed paths changed, refresh only from the persistent detached QMD source at `scratch/qmd-main` after changes land on `main`; never run QMD from a task worktree. Change-history updated via script after material structural updates.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

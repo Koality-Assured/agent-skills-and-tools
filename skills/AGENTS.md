@@ -1,6 +1,6 @@
 # Skills AGENTS
 
-Each skill is a subdirectory with `SKILL.md` (optional `references/`, `scripts/`, `assets/`). Authoring SoT: [`skill-conventions.md`](./skill-conventions.md).
+Each skill is a subdirectory with `SKILL.md` (optional `references/`, `scripts/`, `assets/`). Authoring SoT: [`skill-conventions.md`](skill-conventions.md).
 
 This file is maintained at `ai-router/ai-tooling/skills/` and may be exported as `skills/` into a standalone repository. That export omits `ai-router`'s root and area `AGENTS.md` files, routing catalog, and generator. Relative links and commands below that target those files apply only in the full `ai-router` checkout; downstream trees follow their destination repository's own instructions and catalog, when provided.
 
@@ -19,7 +19,7 @@ Ingest simply; do not duplicate skills or paste root Critical. In the full `ai-r
 ## Rules
 
 - Update the source doc first when behavior changes; then the skill.
-- Follow [`skill-conventions.md`](./skill-conventions.md) (frontmatter + required headings). Author via `skill-builder`.
+- Follow [`skill-conventions.md`](skill-conventions.md) (frontmatter + required headings). Author via `skill-builder`.
 - Keep `SKILL.md` short; link out instead of duplicating standards.
 - In the full `ai-router` checkout, prefer calling tagged Python scripts from root `scripts/`. Such commands are ai-router-only examples in a standalone export; use destination-local tools or official vendor clients instead, and report a capability gap if neither is available.
 - Catalog in the full `ai-router` checkout only: run `python scripts/routing/generate_skill_dispatch.py` to update `routing/skill-dispatch.md`. Both the generator and catalog are outside the skills-only export; do not run that command in a downstream skills repository. README is human-thin only.

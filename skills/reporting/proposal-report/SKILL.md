@@ -67,3 +67,5 @@ No secrets from project notes into the proposal.
 ## Completion gates
 
 Proposal path. Human-readable prose passed anti-slop then humanizer (or skipped as out of scope). Memory if tracked.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

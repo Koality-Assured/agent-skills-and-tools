@@ -71,3 +71,5 @@ Chunks are not a second system prompt. `references/` is advisory. No secrets in 
 ## Completion gates
 
 If this session changed indexed Markdown, retrieval remains from the persistent detached QMD source; sync it after the changes land on `main`, then run `qmd update`. Collection reconfiguration remains subject to its preflight and approval. If you learned a new qmd pitfall, write it in `supporting/qmd/query-pattern.md` (not README; mutating → parent isolates first). Change-history only for durable pattern updates.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

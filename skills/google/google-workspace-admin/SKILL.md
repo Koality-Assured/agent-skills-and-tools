@@ -92,3 +92,5 @@ Never store or commit super-admin credentials, service account keys, or OAuth cl
 - Domain audits pass with complete findings summary.
 - Audit artifacts saved to `results/`.
 - No unredacted admin credentials or private directory paths emitted.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

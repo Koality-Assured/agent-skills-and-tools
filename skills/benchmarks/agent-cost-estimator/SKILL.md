@@ -77,3 +77,5 @@ Cost estimation scripts parse agent and skill definitions locally without sendin
 ## Completion gates
 
 Generated report saved to `results/cost-layers/agent-estimates/<slug>/report.md` with JSON summary. Update `supporting/benchmarks/` if pricing presets or token estimation formulas change.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

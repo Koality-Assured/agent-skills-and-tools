@@ -57,7 +57,7 @@ Read-only inspection. Safe to execute on primary checkout.
 1. Discover metadata schemas via `qmd search "google workspace metadata schemas"`.
 2. Collect metadata across specific entities:
    ```bash
-   python scripts/google/google_suite_ops.py metadata collect --service drive --target-id "[REDACTED_GOOGLE_DRIVE_TEST_FOLDER]" --json
+   python scripts/google/google_suite_ops.py metadata collect --service drive --target-id "<DRIVE_FOLDER_ID>" --json
    python scripts/google/google_suite_ops.py metadata collect --service user --target-id "developer@example.com" --json
    ```
 3. Generate cross-service inventory summary:
@@ -84,3 +84,5 @@ Ensure all collected metadata is sanitized of sensitive PII or session tokens be
 
 - Metadata output formatted as normalized JSON.
 - Output written under `results/` with zero credential leaks.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

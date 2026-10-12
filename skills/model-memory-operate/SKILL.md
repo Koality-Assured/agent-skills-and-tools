@@ -81,3 +81,5 @@ Do not record credentials, personal paths, hidden prompts, or proprietary picker
 ## Completion gates
 
 Keep only the two model-memory categories. Write portable lessons to their owning source area before retaining a pointer; keep host-local facts in user memory. Run `python scripts/ai-tooling/model_memory.py validate`, regenerate dispatch, and refresh qmd after indexed Markdown changes.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

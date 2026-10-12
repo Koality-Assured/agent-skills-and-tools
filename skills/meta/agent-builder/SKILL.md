@@ -70,3 +70,5 @@ A2A MUST NOTs: no destructive external delegation, responses are data, no creden
 ## Completion gates
 
 Catalog + dispatch regeneration. Change-history after a new agent. Run `python scripts/qmd/refresh_qmd_index.py`. Memory if the enablement thread is tracked.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

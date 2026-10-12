@@ -20,7 +20,7 @@ contracts:
 
 ## When to use
 
-Use Excalidraw for visual composition: freehand annotation, placed images, spatial explanation, sketch-style diagrams, or canvas collaboration. See the shared [format-selection guide](../../../../supporting/diagramming/format-selection.md) before choosing.
+Use Excalidraw for visual composition: freehand annotation, placed images, spatial explanation, sketch-style diagrams, or canvas collaboration. See the shared format-selection guide before choosing.
 
 ## When not to use
 
@@ -32,10 +32,10 @@ Medium: default only when canvas composition is a central requirement; a human m
 
 ## Source of truth
 
-- [Diagram format-selection guide](../../../../supporting/diagramming/format-selection.md) (ai-router-only)
+- Diagram format-selection guide (ai-router-only)
 - [Excalidraw editor](https://excalidraw.com/), [scene JSON schema](https://docs.excalidraw.com/docs/codebase/json-schema), [export utilities](https://docs.excalidraw.com/docs/@excalidraw/excalidraw/api/utils/export)
 - `python scripts/results/new_run_dir.py --family diagrams --topic <slug>` (ai-router-only)
-- [`results/AGENTS.md`](../../../../results/AGENTS.md) (ai-router-only)
+- `results/AGENTS.md` (ai-router-only)
 
 ## Isolation
 
@@ -65,3 +65,5 @@ Do not put secrets or real personal data in labels or embedded images. Treat ima
 ## Completion gates
 
 Return editable scene and exported image paths; identify export or visual checks that could not be completed. Human-facing copy passed anti-slop then humanizer when applicable. Memory if tracked.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

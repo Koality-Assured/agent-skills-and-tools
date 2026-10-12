@@ -89,3 +89,5 @@ Key mutations require explicit authorization originating in the human's turn.
 ## Completion gates
 
 Audit or rotation report recorded under `results/llm/`. Compliance flags (ZDR, spend caps) verified. No raw credentials logged.
+
+> **Note:** This skill requires companion tooling not included in this catalog.

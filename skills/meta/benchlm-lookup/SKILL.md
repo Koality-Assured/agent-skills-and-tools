@@ -87,3 +87,5 @@ Follow the destination's root security rules (ai-router policy path is optional 
 ## Completion gates
 
 Emit result envelope (`task_id`, `status`, `artifacts`, `metrics`). Append change history if tooling or references changed.
+
+> **Note:** This skill requires companion tooling not included in this catalog.
