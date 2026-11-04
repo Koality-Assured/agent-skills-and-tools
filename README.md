@@ -29,7 +29,7 @@
 In modern multi-agent systems, agents frequently suffer from prompt bloat, unstructured skill execution, leaking workspace mutations, and fragile undocumented tool parameters. `agent-skills-and-tools` solves these problems by providing:
 1. **Schema V2 Guarantees:** Strict JSON Schema (Draft 2020-12) validation for skill frontmatter, binary prerequisites, and I/O contracts.
 2. **Deterministic Sandboxing:** Built-in isolation semantics (`mutate` vs. `read-only`) preventing mutation pollution across primary branches.
-3. **Curated Domain Catalog:** 91+ production-tested skills spanning 20 functional families—from cloud governance and AST fact extraction to cost-layer proxies and executive reporting.
+3. **Curated Domain Catalog:** 95+ production-tested skills spanning 21 functional families—from cloud governance and AST fact extraction to cost-layer proxies and executive reporting.
 4. **Harness-Agnostic Portability:** Standardized markdown and JSON specifications compatible with any AI coding agent runtime (Claude Code, Google Antigravity, OpenAI Swarm, AutoGen, and custom harnesses).
 
 ---
@@ -45,7 +45,7 @@ agent-skills-and-tools/
 ├── schemas/                    # Formal JSON Schema specifications (Draft 2020-12)
 │   ├── skill.schema.json       # Frontmatter metadata, DAG dependencies, & I/O contracts
 │   └── tool.schema.json        # Tool declaration and parameter specification schema
-├── skills/                     # Curated skill library (91+ skills in 20 families)
+├── skills/                     # Curated skill library (95+ skills in 21 families)
 │   ├── admin/                  # Tenant & LLM vendor governance
 │   ├── aws/                    # AWS diagnostics, posture auditing & mutations
 │   ├── azure/                  # Azure resource graph & activity log auditing
@@ -59,6 +59,7 @@ agent-skills-and-tools/
 │   ├── google/                 # Google Workspace, Drive & Gmail orchestration
 │   ├── harness-review/         # Agent harness control-plane review
 │   ├── iac/                    # Terraform/OpenTofu validation & security audits
+│   ├── legal/                  # Legal research, contract review & compliance
 │   ├── memory/                 # Agent operational memory lifecycle
 │   ├── meta/                   # Harness engineering & agent builder meta-skills
 │   ├── model-memory-operate/   # Model-level episodic memory deduplication
@@ -130,7 +131,7 @@ dependencies:
 
 ## Domain Families Breakdown
 
-The library hosts **91 verified skills** organized into **20 domain families**:
+The library hosts **95+ verified skills** organized into **21 domain families**:
 
 | Domain Family | Skill Count | Primary Scope & Capabilities |
 | :--- | :---: | :--- |
@@ -147,6 +148,7 @@ The library hosts **91 verified skills** organized into **20 domain families**:
 | **`google`** | 4 | Google Workspace domain governance, Drive document management, Gmail batch triage/drafting, and metadata auditing. |
 | **`harness-review`**| 1 | Comprehensive control-plane auditing across agent definitions, skill catalogs, routing tables, and A2A interaction protocols. |
 | **`iac`** | 3 | Infrastructure-as-Code security audits (tfsec, checkov), Terraform/OpenTofu module scaffolding, and plan validation. |
+| **`legal`** | 4 | Legal research, contract review, terms-of-service analysis, and regulatory compliance skills. |
 | **`memory`** | 3 | Agent operational memory checkpoint creation, delta adjustments, and stale memory cleanup under `ai-tooling/memory/`. |
 | **`meta`** | 21 | Agent authoring, skill authoring, script building, doc building, antagonistic reviews, worktree isolation, QMD search tuning, and repository synchronization. |
 | **`model-memory-operate`** | 1 | Model-level episodic memory retrieval, deduplication, and evidence promotion. |
