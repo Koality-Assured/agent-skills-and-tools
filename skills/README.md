@@ -25,6 +25,8 @@ Human index (not agent SoT):
 | [`azure-logs/`](azure/azure-logs/) | cloud-operator | mutate |
 | [`azure-read/`](azure/azure-read/) | cloud-operator | mutate |
 | [`azure-write/`](azure/azure-write/) | cloud-operator | mutate |
+| [`bifrost-admin/`](admin/bifrost-admin/) | bifrost-operator | mutate |
+| [`bifrost-service/`](admin/bifrost-service/) | bifrost-operator | mutate |
 | [`cloud-admin-provision/`](admin/cloud-admin-provision/) | cloud-operator | mutate |
 | [`code-review-report/`](reporting/code-review-report/) | document-operator | mutate |
 | [`corpus-draft/`](reporting/corpus-draft/) | document-operator | mutate |
@@ -45,6 +47,7 @@ Human index (not agent SoT):
 | [`guidance-draft/`](reporting/guidance-draft/) | document-operator | mutate |
 | [`headroom/`](cost-layers/headroom/) | harness-operator | read-only |
 | [`harness-review/`](harness-review/) | harness-operator | mutate |
+| [`harness-anti-rot/`](meta/harness-anti-rot/) | harness-operator | read-only |
 | [`humanizer/`](reporting/humanizer/) | document-operator | mutate |
 | [`isolate-work/`](meta/isolate-work/) | router | mutate |
 | [`markdownlint/`](meta/markdownlint/) | document-operator | mutate |
