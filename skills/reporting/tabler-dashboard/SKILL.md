@@ -48,7 +48,9 @@ Standalone dispatch: Follow the destination's isolation and dispatch rules. Use 
 1. Confirm the host report path (executive, proposal, code-review, threat-model, etc.) from the parent prompt. Discover related facts with `qmd search` — do not walk `results/` trees.
 2. Prepare a small stats/sections input (JSON or Markdown summary) with **no secrets**.
 3. Store under the **existing** host family — beside the report run or `results/reports/<type>/<topic>/<YYYY-MM-DD>/`. Do not invent a new top-level results family.
-4. Run `python scripts/results/build_tabler_dashboard.py --input <stats> --out <host-run-dir> [--title <title>] [--cdn|--local] [--dry-run]` (exact flags follow the script). Prefer pinned CDN **CSS** (`@tabler/core@1.4.0`); JS **off** by default — see supporting notes.
+4. Run `python scripts/results/build_tabler_dashboard.py --input <stats> --out <host-run-dir> [--title <title>] [--theme light|dark|auto] [--cdn|--local] [--dry-run]` (exact flags follow the script). Prefer pinned CDN **CSS** (`@tabler/core@1.4.0`); JS **off** by default — see supporting notes.
+   - **Mobile display**: verify that cards collapse to single-column on mobile viewports (`col-sm-6 col-lg-3` pattern) and tables remain scrollable via `.table-responsive`. The page includes `<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">`.
+   - **Visual theme verification**: verify both light (`--theme light`) and dark (`--theme dark`) or system (`--theme auto`) rendering across desktop and mobile screen widths.
 5. Return dashboard HTML path + host report path to the parent.
 6. Apply [`anti-slop`](../anti-slop/SKILL.md) then [`humanizer`](../humanizer/SKILL.md) to human-facing titles/labels in this session. Skip raw numeric tables and schemas.
 

@@ -24,7 +24,7 @@ dependencies:
 contracts:
   inputs:
     - Target tool identifier (web URL, local HTML file/directory, CLI command string, or desktop window title)
-    - Desired output formats (all, png, gif, webm), viewport dimensions, and step duration
+    - Desired output formats (all, png, gif, webm), device presets (desktop, tablet, mobile, matrix), and visual theme (light, dark, both)
     - Optional sequence of navigation steps, interaction features, or state progression
     - Topic slug for results routing or explicit output path
   outputs:
@@ -76,7 +76,9 @@ Standalone dispatch: Follow the destination's isolation and dispatch rules. Use 
    - **Web**: remote URL (`https://...`) or local HTML file / directory (e.g. `C:\Code\KA\secpanic-idler\index.html`). Local targets automatically launch an ephemeral background HTTP server to avoid CORS/ES-module restrictions.
    - **CLI**: command string to execute (e.g. `python scripts/cli/harness.py status`). Output is captured and styled into an elegant dark-mode terminal presentation.
    - **Desktop**: interactive window title or desktop region (applicable in interactive desktop sessions).
-2. Choose desired output formats (`--format all`, `png`, `gif`, or `webm`) and viewport dimensions (`--width`, `--height`).
+2. Choose desired output formats (`--format all`, `png`, `gif`, or `webm`), device resolution presets (`--preset desktop`, `tablet`, `mobile`, or `matrix`), and visual theme (`--theme light`, `dark`, or `both`):
+   - **Resolution verification**: use `--preset matrix` to capture and verify layouts across desktop (1280x800), tablet (768x1024), and mobile (390x844). Mobile presets automatically apply mobile user-agents, touch flags, and high-DPI retina scaling (2.0x DPR).
+   - **Visual theme verification**: use `--theme both` to confirm that contrast, cards, borders, and colors render legibly in both light and dark modes across resolutions.
 3. For multi-step workflows or views (e.g. SecPanic screens or command sequences), specify `--steps` (e.g. `--steps command operations detection team`) and adjust `--step-duration` (default 2.0s per step).
 4. Determine storage destination:
    - Standalone results run: provide `--topic <slug>` to write to `results/captures/<topic>/<YYYY-MM-DD>/`.
